@@ -30,7 +30,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-      <Button>SIGN UP</Button>
+      <Button>Run Meshery</Button>
     </nav>
   );
 };
