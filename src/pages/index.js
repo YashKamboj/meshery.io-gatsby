@@ -3,6 +3,7 @@ import Layout from "../Layout/layout"
 import Projects from "../components/Projects-home"
 import Subscribe from "../components/subscribe"
 import MailingList from "../components/mailing-list"
+import Programs from "../components/programs"
 import { GlobalStyle } from "./app.styles";
 
 import cncfLogo from "../assets/images/cncf-horizontal-color.svg"
@@ -15,10 +16,7 @@ const IndexPage = () => {
    <GlobalStyle />
   <Layout>
     <Projects />
-    <section class="reversehero">
-    <Subscribe />
-    <MailingList />
-    </section>
+    
     <section class="bg-white">
 		<div class="container cncf-section" >
 			<h4>MESHERY IS A CLOUD NATIVE COMPUTING FOUNDATION PROJECT</h4>
@@ -33,6 +31,11 @@ const IndexPage = () => {
 		</div>
 	</section>
 
+    <section class="reversehero">
+    <Subscribe />
+    <MailingList />
+    </section>
+     <Programs /> 
     </Layout>
     </>
   )
