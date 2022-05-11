@@ -4,6 +4,7 @@ import Projects from "../components/Projects-home"
 import Subscribe from "../components/subscribe"
 import MailingList from "../components/mailing-list"
 import Programs from "../components/programs"
+import Overview from "../components/Overview"
 // import GettingStarted from "../components/Getting-Started"
 import { GlobalStyle } from "./app.styles";
 
@@ -16,15 +17,7 @@ const IndexPage = () => {
    <GlobalStyle />
   <Layout>
    
-  <section className="overview-section">
-        <div className="container">
-          <h1 className="overview-heading" style={{textalign: "center"}}>Overview</h1>
-          <div className="google-slides">
-            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSJdaOJ6MdmYQCyd2c3sbGsa9h7BVqauzBpdeVIKMpAh4eHoStLTMS8hmYJdzT0YTgXzS2chyrLPRzR/embed?start=true&loop=true&delayms=5000" frameBorder={0} allowFullScreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy">
-            </iframe>
-			</div>
-        </div>
-      </section>
+    <Overview /> 
     {/* <GettingStarted /> */}
     <Projects />
     <section className="bg-white" style={{margin:"auto",maxWidth: "1140px", textAlign:"center", padding:"2rem"}}>
