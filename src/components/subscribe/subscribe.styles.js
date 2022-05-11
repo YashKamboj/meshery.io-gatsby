@@ -13,7 +13,7 @@ const SubscribeWrapper = styled.section`
   }
     
   .NAME {
-    width: 80%;
+    width: 70%;
     height: 3rem;
     border: 1px solid #000000;
     box-sizing: border-box;
@@ -22,7 +22,7 @@ const SubscribeWrapper = styled.section`
   }
   
   .EMAIL {
-    width: 80%;
+    width: 70%;
     height: 3rem;
     margin-top: 2rem;
     border: 1px solid #000000;

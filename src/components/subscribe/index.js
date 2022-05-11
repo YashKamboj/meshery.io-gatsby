@@ -4,9 +4,9 @@ import SubscribeWrapper from "./subscribe.styles"
  const Subscribe = () => {
   return (
      <SubscribeWrapper>
-    <div class="form-container">
+    <div className="form-container">
     
-     <p class="newsletter-heading">Community Newsletter</p>
+     <p className="newsletter-heading">Community Newsletter</p>
     <div id="mc_embed_signup">
         <form action="https://layer5.us15.list-manage.com/subscribe/post?u=6b50be5aea3dfe1fd4c041d80&id=f7bd70043b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" onsubmit="document.getElementById(mc-embedded-subscribe-form).submit();">
           <div id="mc_embed_signup_scroll">

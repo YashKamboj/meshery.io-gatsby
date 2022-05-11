@@ -3,6 +3,22 @@ import styled from "styled-components";
 const ProgramsWrapper = styled.section`
 
 
+.programs-section{
+  padding: 4rem ;
+  background: #3c494f;
+
+  h3{
+    text-align: center;
+     color: aliceblue;
+     margin: 0;
+     
+     a{
+      text-decoration: none; 
+      color: gold;
+     }
+  }
+}
+
 .smallcard-a {
     font-size: 1.2rem;
     padding-top: 0.6rem;
@@ -27,9 +43,8 @@ const ProgramsWrapper = styled.section`
     -moz-user-drag: none;
     -o-user-drag: none;
     border-radius: .25rem;
-  }
 
-  span .smallcard-a:hover {
+  &:hover {
     text-decoration: none;
     transition-timing-function: ease-in;
     transition: 0.2s;
@@ -39,6 +54,7 @@ const ProgramsWrapper = styled.section`
     -webkit-box-shadow: 0 7px 7px 1px rgba(0, 0, 0, 0.14),
       0 3px 6px 2px rgba(0, 0, 0, 0.12), 0 4px 4px -3px rgba(0, 0, 0, 0.3);
   }
+}
 
   .minicard-span {
     text-align: center;
@@ -46,9 +62,8 @@ const ProgramsWrapper = styled.section`
     font-size: 1.3rem;
     line-height: 110%;
     margin: 0.82rem 0 0.656rem 0;
-  }
 
-  .minicard-img {
+  img {
     width: 10%;
     height: inherit;
     vertical-align: middle;
@@ -61,6 +76,9 @@ const ProgramsWrapper = styled.section`
     bottom: -3px;
     color: #f5faf9;
   }
+}
+
+
 
   .card-content {
       display: flex;
