@@ -14,8 +14,20 @@ const IndexPage = () => {
     <>
    <GlobalStyle />
   <Layout>
-    <Projects />
+
+  <section class="overview-section">
+		<div class="container">
+			<h1 class="overview-heading" style={{textAlign: "center"}}>Overview</h1>
+			<div class="google-slides">
+				<iframe
+					src="https://docs.google.com/presentation/d/e/2PACX-1vSJdaOJ6MdmYQCyd2c3sbGsa9h7BVqauzBpdeVIKMpAh4eHoStLTMS8hmYJdzT0YTgXzS2chyrLPRzR/embed?start=true&loop=true&delayms=5000"
+					frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" loading="lazy">
+				</iframe>
+			</div>
+		</div>
+	</section> 
     
+    <Projects />
     <section class="bg-white" style={{margin:"auto",maxWidth: "1140px", textAlign:"center", padding:"2rem"}}>
 		<div class="container cncf-section" >
 			<h4>MESHERY IS A CLOUD NATIVE COMPUTING FOUNDATION PROJECT</h4>
