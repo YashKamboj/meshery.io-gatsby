@@ -7,9 +7,8 @@ import Programs from "../components/programs"
 import { GlobalStyle } from "./app.styles";
 
 import cncfLogo from "../assets/images/cncf-horizontal-color.svg"
-import layer5logo from "../assets/images/layer5-white-no-trim.svg"
+import layer5logo from "../assets/images/layer5-no-trim.svg"
  
-// markup
 const IndexPage = () => {
   return(
     <>
@@ -17,17 +16,17 @@ const IndexPage = () => {
   <Layout>
     <Projects />
     
-    <section class="bg-white">
+    <section class="bg-white" style={{margin:"auto",maxWidth: "1140px", textAlign:"center", padding:"2rem"}}>
 		<div class="container cncf-section" >
 			<h4>MESHERY IS A CLOUD NATIVE COMPUTING FOUNDATION PROJECT</h4>
-			<img src={cncfLogo} class="cncf-img" alt="CNCF Logo" loading="lazy"/>
-			<p>
-				<span class="layer5-caption">
+			<img src={cncfLogo} style={{maxWidth:"700px"}} class="cncf-img" alt="CNCF Logo" loading="lazy"/>
+			<div style={{textAlign:"center"}}>
+				<span class="layer5-caption" >
 					Created by
-						<img src={layer5logo} href="https://layer5.io/" target="_blank" alt="Layer5 Logo"/>
+						<img src={layer5logo} href="https://layer5.io/" style={{width:"110px", margin:"0 1rem"}} target="_blank" alt="Layer5 Logo"/>
 				and its open source community.
 				</span>
-			</p>
+			</div>
 		</div>
 	</section>
 

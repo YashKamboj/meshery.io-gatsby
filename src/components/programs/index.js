@@ -1,15 +1,29 @@
 import React from 'react'
+import ProgramsWrapper from "./programs.style"
+
+import Gsoc from "../../assets/images/programs/gsoc.svg"
+import CNCF from "../../assets/images/programs/cncf-icon-white.svg"
+import Gsod from "../../assets/images/programs/gsod.svg"
+import LFX from "../../assets/images/programs/lfx-logo.svg"
+
 
  const Programs = () => {
   return (
-    <div id="gsoc-2020" class="card-content flex">
+    <ProgramsWrapper>
+      <section class="programs-section" style={{padding: "4rem auto 4rem auto", background:"#3c494f"}}>
+		<h3 style={{textAlign: "center", color:"aliceblue"}}>
+
+			Learn about Meshery's participation in <a href="/programs" style={{textDecoration: "none", color: "gold"}}>various open source
+			programs</a>.
+		</h3>
+    <div id="gsoc-2020" className="card-content flex">
   <span class="minicard-span">
     <a
       class="smallcard-a waves-effect waves-light btn white-text darken-2 l5-dark-green z-depth-2"
       href="/programs/meshery/cncf"
     >
       <img
-        src="../images/programs/cncf-icon-white.svg"
+        src={CNCF}
         alt="CNCF"
         class="minicard-img"
       />
@@ -23,7 +37,7 @@ import React from 'react'
       href="/programs/gsod/2020"
     >
       <img
-        src="../images/programs/gsod.svg"
+        src={Gsod}
         alt="GSOD2020"
         class="minicard-img"
       />
@@ -36,7 +50,7 @@ import React from 'react'
       href="/programs/gsoc/2020"
     >
       <img
-        src="../images/programs/gsoc.svg"
+        src={Gsoc}
         alt="GSOC"
         class="minicard-img"
       />
@@ -49,7 +63,7 @@ import React from 'react'
       href="/programs/lfx"
     >
       <img
-        src="../images/programs/lfx-logo.svg"
+        src={LFX}
         alt="LFX"
         class="minicard-img"
         // style="width:23%;padding-top:.4rem;padding-bottom:.4rem;"
@@ -57,6 +71,8 @@ import React from 'react'
       <span class="inner-span">LFX </span></a>
   </span>
 </div>
+</section>
+</ProgramsWrapper>
   )
 }
 
