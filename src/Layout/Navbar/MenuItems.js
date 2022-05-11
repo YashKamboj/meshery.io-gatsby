@@ -11,7 +11,7 @@ const menuItems = [
     },
     {
       title: "Blog",
-      url: "https://meshery.io/blog",
+      url: "/blog",
       cName: "nav-links"
     },
     {

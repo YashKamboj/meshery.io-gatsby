@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "./Button";
+import { Link } from "gatsby";
 import menuItems from "./MenuItems";
 import "./Navbar.css";
 import MesheryIcon from "../../assets/images/meshery-logo-light.png";
@@ -13,9 +14,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" >
+      <Link to="/">
       <img src={MesheryIcon} height="45" />
       <img src={MesheryText} height="20" />
+      </Link>
       <div className="menu-icon" onClick={handleClick}>
         <i className={active ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
