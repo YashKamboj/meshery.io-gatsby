@@ -5,6 +5,7 @@ import Subscribe from "../components/subscribe"
 import MailingList from "../components/mailing-list"
 import Programs from "../components/programs"
 import Overview from "../components/Overview"
+import Companies from "../components/Used by companies"
 // import GettingStarted from "../components/Getting-Started"
 import { GlobalStyle } from "./app.styles";
 
@@ -16,7 +17,7 @@ const IndexPage = () => {
     <>
    <GlobalStyle />
   <Layout>
-   
+    <Companies />
     <Overview /> 
     {/* <GettingStarted /> */}
     <Projects />
