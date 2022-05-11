@@ -31,10 +31,10 @@ const IndexPage = () => {
 		</div>
 	</section>
 
-    <section class="reversehero">
+    <div class="reversehero" style={{display: "flex", color: "#ffffff", textAlign: "center", padding:"4rem 5vw" ,   background: "linear-gradient(to top, #395054 0%, #00d3a9 100%) no-repeat #a05fb7"}}>
     <Subscribe />
     <MailingList />
-    </section>
+    </div>
      <Programs /> 
     </Layout>
     </>

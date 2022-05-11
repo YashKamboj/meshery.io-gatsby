@@ -9,12 +9,12 @@ import MailingListWrapper from "./mailingList.styles"
     <p class = "mail-subheading">Engage in the Meshery project. Join any of our mailing lists.</p>
     <div class= "mail-container">
     <div class="mail-row">
-        <p class="button-alt"><a href="https://groups.google.com/a/meshery.io/g/developers" class="button-dev">Developers</a></p>
-        <p class="button-alt"><a href="https://groups.google.com/a/meshery.io/g/users" class="button-user">Users</a></p>
+        <button class="button-alt button-dev" href="https://groups.google.com/a/meshery.io/g/developers" >Developers </button>
+        <button class="button-alt button-user" href="https://groups.google.com/a/meshery.io/g/users" >Users</button>
     </div>
     <div class="mail-row">
-        <p class="button-alt"><a href="mailto:maintainers@meshery.io" class="button-maintain">Maintainer</a></p>
-        <p class="button-alt"><a href="mailto:community@meshery.io" class="button-comm">Community</a></p>
+        <button class="button-alt button-maintain" href="mailto:maintainers@meshery.io" >Maintainer</button>
+        <button class="button-alt button-comm" href="mailto:community@meshery.io" >Community</button>
     </div>	 
     
 </div>

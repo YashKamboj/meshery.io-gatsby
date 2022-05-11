@@ -53,10 +53,13 @@ const SubscribeWrapper = styled.section`
     display: flex;
     justify-content: center;
     height: 3.5rem;
+    margin-top: 2rem;
     font-style: normal;
     font-weight: 500;
     font-size: 1.125rem;
     letter-spacing: 0.5px;
+    background-color: #00d3a9;
+    color: #fff;
   }
   
   #mc_embed_signup {
@@ -90,12 +93,12 @@ const SubscribeWrapper = styled.section`
   }
   
   .form-container {
-    /* border: 1px dashed #1e2117; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 5rem  5rem!important; */
     background-color: #3c494f;
+    padding: 3rem 3rem 3.5rem;
+    border-radius: 10px;
   }
   
   .form-container > p {

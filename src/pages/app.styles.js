@@ -221,6 +221,7 @@ const GlobalStyle = createGlobalStyle`
   
   .reversehero {
     color: #ffffff;
+    display: flex;
     text-align: center;
     background: linear-gradient(
         to top,
@@ -232,7 +233,6 @@ const GlobalStyle = createGlobalStyle`
   
     & > div {
       display: flex;
-      flex-direction: row;
       align-items: center;
       justify-content: center;
       padding: 4rem 5vw;
