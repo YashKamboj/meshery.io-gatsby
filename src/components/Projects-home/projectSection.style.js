@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import background from "./images/background.svg";
 
 const ProjectItemWrapper = styled.section`
 .callout {

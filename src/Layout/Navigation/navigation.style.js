@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 const NavigationWrap = styled.header`
-
-  background-color: black;
+  background-image: linear-gradient(to bottom, #395054 0%, #3c494f 100%);
   position: sticky;
   width: 100%;
   z-index: 9999;
@@ -11,6 +10,7 @@ const NavigationWrap = styled.header`
 
   .nav-container {
     display: flex;
+    
   }
   .meshery-cta {
     position: relative;
@@ -134,7 +134,7 @@ const NavigationWrap = styled.header`
     }
     .nav-display {
       border-left: 2px solid #f1f1f1;
-      background: #ffffff;
+      background: #3c494f;
       padding-top: 3em;
       border-radius: 0 50px 50px 0;
       display: grid;
@@ -298,7 +298,7 @@ const NavigationWrap = styled.header`
   }
   &.scrolled {    
     box-shadow: rgba(0, 179, 159, 0.2) 0px 10px 25px;
-    background: white;
+    background: #3c494f;
     .nav {
       .nav-item{
         a {

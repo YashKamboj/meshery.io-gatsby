@@ -17,11 +17,11 @@ import LFX from "../../assets/images/programs/lfx-logo.svg"
 		</h3>
     <div id="gsoc-2020" className="card-content flex">
   <span className="minicard-span">
-    <a className="smallcard-a waves-effect waves-light btn white-text darken-2 l5-dark-green z-depth-2">
+    <a href="/programs/meshery/cncf" className="smallcard-a waves-effect waves-light btn white-text darken-2 l5-dark-green z-depth-2">
       <img
         src={CNCF}
         alt="CNCF"
-        href="/programs/meshery/cncf"
+        
         className="minicard-img"
       />
 

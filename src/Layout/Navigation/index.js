@@ -40,9 +40,9 @@ const Navigation = () => {
     <NavigationWrap className={`nav-block ${scroll ? "scrolled" : ""}`}>
       <Container className="nav-container">
         <div className="navbar-wrap">
-          <Link to="/" className="logo">
-          <img src={MesheryIcon} width="20" />
-      <img src={MesheryText} height="20" />
+          <Link to="/" >
+          <img src={MesheryIcon} alt="MesheryIcon" height="45" />
+           <img src={MesheryText} alt="MesheryText" height="20"  />
           </Link>
           <nav className="nav">
             {expand ?
@@ -92,12 +92,11 @@ const Navigation = () => {
             <ScrollspyMenu
               className={`collapsed ${expand ? "is-expanded" : ""}`}
               menuItems={MenuItems}
-              // blogData={data}
             />
           </nav>
         </div>
         <div className="meshery-cta">
-          <Button secondary className="banner-btn two" title="Try Meshery" url="/service-mesh-management/meshery"/>
+          <Button secondary className="banner-btn two" title="Run Meshery" url="/service-mesh-management/meshery"/>
         </div>
       </Container>
     </NavigationWrap>
