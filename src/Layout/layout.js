@@ -1,7 +1,8 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 
-import Navbar from "./Navbar"
+// import Navbar from "./Navbar"
+import Navigation from "./Navigation"
 import Footer from "./Footer"
 import "./layout.css"
 
@@ -9,7 +10,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Navigation />
       <div>
         <main>{children}</main>
         
