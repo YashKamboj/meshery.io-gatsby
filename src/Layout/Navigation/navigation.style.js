@@ -7,6 +7,8 @@ const NavigationWrap = styled.header`
   z-index: 9999;
   top: 0;
   transition: all 0.3s ease 0s;
+  color: white;
+  text-decoration: none;
 
   .nav-container {
     display: flex;
@@ -14,12 +16,22 @@ const NavigationWrap = styled.header`
   }
   .meshery-cta {
     position: relative;
-    right: -4.5rem;
+    right: 0rem;
     top: 1.5rem;
     max-height: 50px;
 
     a {
       display: flex;
+    }
+
+    .runmesherybtn{
+      border: 1px #ccc solid;
+	    border-radius: 5px;
+      color: white;
+      font-size: 0.9rem;
+      background-color: Transparent;
+      width: 7rem;
+      padding: 0.8rem 0;
     }
 
     @media screen and (max-width: 1550px) {
@@ -205,9 +217,14 @@ const NavigationWrap = styled.header`
       padding: 0;
       list-style: none;
       display: flex;
+  text-decoration: none;
+   li{
+  text-decoration: none;
+
+   }
     }
     ul.collapsed {
-      margin: 2rem 0 2rem 0;
+      margin: 1.25rem 0 1.25rem 0;
     }
     .nav-item {
       position: relative;
