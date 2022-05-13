@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "gatsby";
 import { FaBars } from "@react-icons/all-files/fa/FaBars";
 import { IoMdClose } from "@react-icons/all-files/io/IoMdClose";
-import Button from "../../reusecore/Button";
 import ScrollspyMenu from "./utility/ScrollspyMenu"
 
 import NavigationWrap from "./navigation.style";
@@ -41,8 +40,8 @@ const Navigation = () => {
       <Container className="nav-container">
         <div className="navbar-wrap">
           <Link to="/" >
-          <img src={MesheryIcon} alt="MesheryIcon" height="45" />
-           <img src={MesheryText} alt="MesheryText" height="20"  />
+          <img src={MesheryIcon} style={{top:"2rem 0"}} alt="MesheryIcon" height="45" />
+           <img src={MesheryText} style={{margin:"2rem 0"}} alt="MesheryText" height="20"  />
           </Link>
           <nav className="nav">
             {expand ?
@@ -96,7 +95,7 @@ const Navigation = () => {
           </nav>
         </div>
         <div className="meshery-cta">
-          <Button secondary className="banner-btn two" title="Run Meshery" url="/service-mesh-management/meshery"/>
+          <button to="#getting-started" className="runmesherybtn">Run Meshery</button>
         </div>
       </Container>
     </NavigationWrap>

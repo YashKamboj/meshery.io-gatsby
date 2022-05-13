@@ -83,11 +83,12 @@ const CompaniesWrapper = styled.section`
       margin: 0 0 10px 0;
     }
   
-    p {
+    .adopter-descption {
       margin-top: 0px;
       margin-bottom: 30px;
       font-size: 0.9em;
       text-align: center;
+      max-width: inherit;
     }
   
     button {

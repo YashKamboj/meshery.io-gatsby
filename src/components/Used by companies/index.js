@@ -63,7 +63,7 @@ const Companies = () => {
 	<section class="adopter-section">
 		<div class="adopter-container">
 			<h3>Add yourself as an <strong>adopter</strong></h3>
-			<p >and share your service mesh story with the community</p>
+			<p className='adopter-descption' >and share your service mesh story with the community</p>
 				<button to="https://github.com/layer5io/meshery/blob/master/ADOPTERS.md" target="_blank" class="link">
 					Become an Adopter
 				</button>
