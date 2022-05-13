@@ -63,7 +63,6 @@ import LFX from "../../assets/images/programs/lfx-logo.svg"
         src={LFX}
         alt="LFX"
         className="minicard-img"
-        // style="width:23%;padding-top:.4rem;padding-bottom:.4rem;"
       />
       <span className="inner-span">LFX </span></a>
   </span>

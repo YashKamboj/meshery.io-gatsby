@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const NavigationWrap = styled.header`
-  background-image: linear-gradient(to bottom, #395054 0%, #3c494f 100%);
+  background-color: #222222;
   position: sticky;
   width: 100%;
   z-index: 9999;
@@ -46,7 +46,7 @@ const NavigationWrap = styled.header`
   }
   .mobile-menu-icon {
     display: none;
-    color: ${props => props.theme.menuColor};
+    color: white;
     font-size: 24px;
   }
   .dropdown {
@@ -82,7 +82,7 @@ const NavigationWrap = styled.header`
     font-weight: 600;
   }
   .arrow-icon {
-    background: #00B39F;
+    background: white;
     border-radius: 25%;
   }
   .nav-grid {
@@ -115,14 +115,14 @@ const NavigationWrap = styled.header`
           padding: 2px 0;
           display: block;
           .readmore-btn {
-            color: ${props => props.theme.black};
+            color: ${(props) => props.theme.black};
           }
           &:before {
             content: none;
           }
           &:hover{
             .readmore-btn {
-                color: ${props => props.theme.menuHoverColor};
+                color: ${(props) => props.theme.menuHoverColor};
                 svg{
                     margin-left: 3px;
                       transform: scale(1.2);
@@ -215,7 +215,7 @@ const NavigationWrap = styled.header`
       &:hover {
         .menu-link {
           span {
-            color: ${props => props.theme.menuHoverColor};
+            color: #00b39f;
             &:before {
               opacity: 1;
               animation: flowin .5s ease-in;
@@ -228,10 +228,10 @@ const NavigationWrap = styled.header`
       li {
         padding-top: 5px;
         a {
-          color: ${props => props.theme.menuColor};
+          color: black;
           display: block;
           &:hover {
-            color: ${props => props.theme.menuHoverColor}; !important;
+            color: ${(props) => props.theme.menuHoverColor}; !important;
           }
           &:before {
             content: none;
@@ -242,7 +242,8 @@ const NavigationWrap = styled.header`
     a,
     .nav-active {
       position: relative;
-      color: ${props => props.theme.menuColor};
+      color: white;
+      text-decoration:none;
       display: flex;
       line-height: 1.5rem;
       font-size: 15px;
@@ -257,11 +258,11 @@ const NavigationWrap = styled.header`
         width: 20px;
         height: 1px;
         opacity: 0;
-        background: ${props => props.theme.menuHoverColor};
+        background: ${(props) => props.theme.menuHoverColor};
         transition: 450ms all;
       }
       &:hover {
-        color: ${props => props.theme.menuHoverColor};
+        color: ${(props) => props.theme.menuHoverColor};
         &:before {
           opacity: 1;
         }
@@ -281,7 +282,7 @@ const NavigationWrap = styled.header`
           width: 100%;
           height: 1px;
           opacity: 0;
-          background: ${props => props.theme.menuHoverColor};
+          background: ${(props) => props.theme.menuHoverColor};
         }
       }
     }
@@ -297,14 +298,13 @@ const NavigationWrap = styled.header`
     }
   }
   &.scrolled {    
-    box-shadow: rgba(0, 179, 159, 0.2) 0px 10px 25px;
-    background: #3c494f;
     .nav {
       .nav-item{
         a {
-          color:${props => props.theme.menuColor};
+          color:white;
+          text-decoration:none;
           &:hover {
-            color: ${props => props.theme.menuHoverColor};
+            color:#00b39f;
           }
         }
       }
@@ -426,14 +426,14 @@ const NavigationWrap = styled.header`
     margin: 0 auto;
     &:hover{
       .readmore-btn{
-          color: ${props => props.theme.menuHoverColor};
+          color: ${(props) => props.theme.menuHoverColor};
           svg{
               margin-left: 3px;
                 transform: scale(1.2);
           }
       }
       .post-title{
-          color: ${props => props.theme.menuHoverColor};
+          color: ${(props) => props.theme.menuHoverColor};
       }
     }
     a:before {
