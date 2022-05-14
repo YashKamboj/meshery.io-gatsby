@@ -1,0 +1,20 @@
+{
+    "infoBannerOne": {
+        "InfoImage": "../../assets/images/meshery-cloud.png",
+        "InfoTitle": "Operate with configuration best practices",
+        "InfoContent": "Assess your service mesh configuration against deployment and operational best practices with Meshery's configuration validator.",
+        "InfoButton": "learn more"
+    },
+    "infoBannerTwo": {
+        "InfoImage": "../../assets/images/meshery-cloud.png",
+        "InfoTitle": "Operate with configuration best practices",
+        "InfoContent": "Assess your service mesh configuration against deployment and operational best practices with Meshery's configuration validator.",
+        "InfoButton": ""
+    },
+    "infoBannerThree": {
+        "InfoImage": "../../assets/images/meshery-cloud.png",
+        "InfoTitle": "Operate with configuration best practices",
+        "InfoContent": "Assess your service mesh configuration against deployment and operational best practices with Meshery's configuration validator.",
+        "InfoButton": ""
+    }
+}
