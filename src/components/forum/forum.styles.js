@@ -236,7 +236,7 @@ const ForumWrapper = styled.section`
     margin-top: 7px !important;
   }
   .mail-link {
-    color : #00d3a9;
+    color: #00d3a9;
     text-decoration: none;
   }
   a.saffron {
