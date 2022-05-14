@@ -3,20 +3,20 @@ import styled from "styled-components";
 const FooterWrapper = styled.section`
   padding: 3.1rem 0 3.1rem 0;
   background: #222;
-  .container{
-      display: flex;
-      margin: auto;
-      width: 60%;
+  .container {
+    display: flex;
+    margin: auto;
+    width: 60%;
   }
   .footer-links {
     width: 100%;
     margin: 1rem;
     padding: 0;
-  
+
     li {
       list-style: none;
       margin: 0.75rem 0.75rem 0.75rem 0.125rem;
-  
+
       a {
         &:hover {
           text-decoration: none;
@@ -44,7 +44,10 @@ const FooterWrapper = styled.section`
     flex: 0 0 15%;
   }
   @media screen and (max-width: 1400px) {
-    .community, .getting-started, .resources, .socials {
+    .community,
+    .getting-started,
+    .resources,
+    .socials {
       flex: 0 0 22%;
     }
   }
@@ -53,7 +56,10 @@ const FooterWrapper = styled.section`
       flex-wrap: wrap;
       width: 75%;
     }
-    .community, .getting-started, .resources, .socials {
+    .community,
+    .getting-started,
+    .resources,
+    .socials {
       flex: 0 0 30%;
       margin: 1rem 1rem 1rem 5rem;
     }
@@ -63,7 +69,10 @@ const FooterWrapper = styled.section`
       flex-wrap: wrap;
       width: 90%;
     }
-    .community, .getting-started, .resources, .socials {
+    .community,
+    .getting-started,
+    .resources,
+    .socials {
       flex: 0 0 30%;
       margin: 1rem 1rem 1rem 4rem;
     }
@@ -73,7 +82,10 @@ const FooterWrapper = styled.section`
       flex-wrap: wrap;
       width: 90%;
     }
-    .community, .getting-started, .resources, .socials {
+    .community,
+    .getting-started,
+    .resources,
+    .socials {
       flex: 0 0 100%;
       margin: 1rem 0;
       text-align: center;
@@ -83,21 +95,21 @@ const FooterWrapper = styled.section`
     font-size: 0.9rem;
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid #3C494F;
+    border-top: 1px solid #3c494f;
     display: flex;
-    justify-content:space-evenly;
-    text-align:center;
-    @media (max-width:1000px) {
+    justify-content: space-evenly;
+    text-align: center;
+    @media (max-width: 1000px) {
       flex-direction: column;
       text-align: center;
-      .text{
+      .text {
         text-align: center;
         padding-top: 10px;
         padding-bottom: 10px;
       }
     }
   }
-  
+
   .layer5-footer {
     display: inline-flex;
     align-items: center;
@@ -108,8 +120,9 @@ const FooterWrapper = styled.section`
       height: 30px;
     }
   }
-  
-  &, a {
+
+  &,
+  a {
     color: #999;
   }
   a {
@@ -118,16 +131,16 @@ const FooterWrapper = styled.section`
       color: #fff;
     }
   }
-  .section-title{
+  .section-title {
     font-size: 1.25rem;
     margin-bottom: 1rem;
     color: rgba(255, 255, 255, 0.8);
     .title-link {
-        transition: 0.2s all;
-        color: rgba(255, 255, 255, 0.75);
-        &:hover {
-            color: #fff;
-        }
+      transition: 0.2s all;
+      color: rgba(255, 255, 255, 0.75);
+      &:hover {
+        color: #fff;
+      }
     }
   }
   .section-categories {
