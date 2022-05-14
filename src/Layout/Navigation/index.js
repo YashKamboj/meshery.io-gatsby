@@ -9,8 +9,7 @@ import { Container } from "../../reusecore/Layout";
 
 import MenuItems from "./utility/menu-items.js";
 
-import MesheryIcon from "../../assets/images/meshery-logo-light.png";
-import MesheryText from "../../assets/images/meshery-logo-text.png";
+import MesheryText from "../../assets/images/meshery-logo.svg";
 
 const Navigation = () => {
 
@@ -40,8 +39,7 @@ const Navigation = () => {
       <Container className="nav-container">
         <div className="navbar-wrap">
           <Link to="/" >
-          <img src={MesheryIcon} style={{top:"2rem 0"}} alt="MesheryIcon" height="45" />
-           <img src={MesheryText} style={{margin:"2rem 0"}} alt="MesheryText" height="20"  />
+           <img src={MesheryText} style={{margin:"2rem 0"}} alt="MesheryText" height="40"  />
           </Link>
           <nav className="nav">
             {expand ?
