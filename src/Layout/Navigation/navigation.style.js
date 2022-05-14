@@ -63,15 +63,13 @@ const NavigationWrap = styled.header`
   }
   .dropdown {
     position: absolute;
-    background: white;
+    background: #ddd;
     opacity: 0;
-    border: 1px solid #f5f5f5;
-    border-radius: 50px;
     top: 100%;
-    left: 0;
-    width: 100%;
+    // left: 0;
+    width: auto;
     display: block;
-    box-shadow: 0px 5px 10px 1px rgba(0, 179, 159, 0.50);
+    // box-shadow: 0px 5px 10px 1px rgba(0, 179, 159, 0.50);
     animation: bobbleout ease .18s forwards;
     pointer-events: none;
   }
@@ -79,7 +77,6 @@ const NavigationWrap = styled.header`
     display: block;
     position: absolute;
     top: 100%;
-    left: 0;
     width: 100%;
     height: 350px;
     margin-top: -2rem; 

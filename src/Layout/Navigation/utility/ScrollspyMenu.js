@@ -55,10 +55,8 @@ const ScrollspyMenu = ({ menuItems, ...props }) => {
       {active.subItems !== undefined && (
         <React.Fragment>
           <ul className="dropdown" style={{ zIndex: "101" }}>
-            <div className="nav-grid">
+            {/* <div className="nav-grid"> */}
               <div className="hr">
-                <Link className="section" to={active.path}  >{active.name}
-                </Link>
                 {active.subItems.map((subItem, i) => (
                   <li key={i}>
                     { subItem.name === "Forum" ?
@@ -71,7 +69,7 @@ const ScrollspyMenu = ({ menuItems, ...props }) => {
                     }
                   </li>
                 ))}
-              </div>
+              {/* </div> */}
             </div>
           </ul>
           <div className="wrap" ref={wrapRef} style={{ zIndex: "100" }} />

@@ -1,7 +1,6 @@
 import istio from "../../assets/images/adapters/istio.svg"
 import linkerd from "../../assets/images/adapters/linkerd.svg"
 import consul from "../../assets/images/adapters/consul.svg"
-import oct from "../../assets/images/adapters/oct.svg"
 import nsm from "../../assets/images/adapters/nsm.svg"
 import Kuma from "../../assets/images/adapters/Kuma.svg"
 import osm from "../../assets/images/adapters/osm.svg"
@@ -31,11 +30,6 @@ const Adapterdata = [
          img: consul,
          link: 'https://github.com/meshery/meshery-consul'
        },
-      //  {
-      //    name: 'Octarine',
-      //    img: oct,
-      //    link: 'https://github.com/meshery/meshery-octarine'
-      //  },
        {
          name: 'Network Service Mesh',
          img: nsm,
