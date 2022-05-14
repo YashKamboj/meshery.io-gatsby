@@ -66,7 +66,7 @@ const ForumWrapper = styled.section`
     text-align: center;
     margin-top: 25px;
   }
-  
+
   #mc_embed_signup .button {
     width: 100%;
     margin: 0px;

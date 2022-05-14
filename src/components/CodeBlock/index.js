@@ -17,7 +17,7 @@ export const Pre = styled.pre`
     line-height: 1.3em;
     height: 1.3em;
   }
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 `;
 
 export const LineNo = styled.span`
@@ -55,22 +55,15 @@ const Code = ({ codeString, language }) => {
       language={language}
       theme={theme}
     >
-      {({
-        className,
-        style,
-        tokens,
-        getLineProps,
-        getTokenProps,
-      }) => (
+      {({ className, style, tokens, getLineProps, getTokenProps }) => (
         <Pre>
           <CopyCode onClick={handleClick}>{copyText}</CopyCode>
           <Pre className={className} style={style}>
-                        
             {tokens.map((line, i) => (
               <div {...getLineProps({ line, key: i })} key={i}>
                 <LineNo>{i + 1}</LineNo>
                 {line.map((token, key) => (
-                  <span {...getTokenProps({ token, key })} key={key}/>
+                  <span {...getTokenProps({ token, key })} key={key} />
                 ))}
               </div>
             ))}
@@ -82,4 +75,3 @@ const Code = ({ codeString, language }) => {
 };
 
 export default Code;
-
