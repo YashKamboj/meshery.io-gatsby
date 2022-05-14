@@ -53,7 +53,6 @@ const ProjectItemWrapper = styled.section`
       display: block;
       position: relative;
       max-width: 262px;
-      height: 150px;
       background-color: #f5f5f5;
       border-radius: 4px;
       padding: 25px 24px;

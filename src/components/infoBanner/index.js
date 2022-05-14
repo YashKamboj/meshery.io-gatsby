@@ -2,40 +2,44 @@ import React from "react";
 import { Container, Row, Col } from "../../reusecore/Layout";
 import InfoBannerStyle from "./infoBanner.style";
 import { Link } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
+import Data from './sampleData'
 
-function InfoBanner({InfoImage, InfoTitle, InfoContent,InfoButton}) {
+function InfoBanner() {
   return (
     <InfoBannerStyle>
       <Container fullWidthSM>
+        {Data.map((Data) => {
+          return(
         <Row>
           <Col xs={12} sm={12} md={6}>
             <Link to="/service-mesh-management/meshery">
-              <StaticImage
+              <img
                 className="mesh-image"
                 alt="Meshery - the multi-service mesh manager"
-                src={InfoImage}
+                src={Data.img}
               />
             </Link>
           </Col>
           <Col xs={12} sm={12} md={6}>
             <div className="side">
-              <div className="side-text">{InfoTitle}</div>
+              <div className="side-text"><p>{Data.title}</p></div>
               <div className="description">
-                <p>{InfoContent}</p>
+                <p>{Data.content}</p>
               </div>
 
               <div className="backBtn">
                 <br />
                 <Link to="/service-mesh-management/meshery">
                   <button>
-                    {InfoButton}
+                    {Data.button}
                   </button>
                 </Link>
               </div>
             </div>
           </Col>
         </Row>
+          );
+        })}
       </Container>
     </InfoBannerStyle>
   );
