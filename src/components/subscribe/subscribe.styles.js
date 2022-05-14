@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
 const SubscribeWrapper = styled.section`
-
-.subscribe-a {
+  .subscribe-a {
     text-align: center;
   }
-  
+
   .subscribe-button {
     width: 100%;
     padding: 0.8rem 0.5rem;
     background: rgba(100, 120, 129, 1);
   }
-    
+
   .NAME {
     width: 70%;
     height: 3rem;
@@ -20,7 +19,7 @@ const SubscribeWrapper = styled.section`
     border-radius: 5px;
     padding: 15px;
   }
-  
+
   .EMAIL {
     width: 70%;
     height: 3rem;
@@ -30,7 +29,7 @@ const SubscribeWrapper = styled.section`
     border-radius: 5px;
     padding: 15px;
   }
-  
+
   .NAME::placeholder,
   .NAME::placeholder,
   .EMAIL::placeholder {
@@ -40,7 +39,7 @@ const SubscribeWrapper = styled.section`
     letter-spacing: 0.5px;
     color: #999999;
   }
-  
+
   .subscribe-inputbox {
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +47,7 @@ const SubscribeWrapper = styled.section`
     justify-content: center;
     white-space: nowrap;
   }
-  
+
   .subscribe-button {
     display: flex;
     justify-content: center;
@@ -61,14 +60,14 @@ const SubscribeWrapper = styled.section`
     background-color: #00d3a9;
     color: #fff;
   }
-  
+
   #mc_embed_signup {
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     text-align: center;
     margin-top: 25px;
   }
-  
+
   /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
       We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   #mc_embed_signup .button {
@@ -77,21 +76,21 @@ const SubscribeWrapper = styled.section`
     background-color: rgba(255, 152, 0, 0.5);
     text-align: center;
   }
-  
+
   #mc_embed_signup .button:hover {
     background-color: rgba(255, 152, 0, 0.7);
   }
-  
+
   #mc_embed_signup .button {
     margin: 0px;
     background-color: rgba(255, 152, 0, 0.5);
     text-align: center;
   }
-  
+
   #mc_embed_signup .button:hover {
     background-color: rgba(255, 152, 0, 0.7);
   }
-  
+
   .form-container {
     display: flex;
     flex-direction: column;
@@ -100,7 +99,7 @@ const SubscribeWrapper = styled.section`
     padding: 3rem 3rem 3.5rem;
     border-radius: 10px;
   }
-  
+
   .form-container > p {
     font-style: normal;
     font-weight: 600;
@@ -108,7 +107,7 @@ const SubscribeWrapper = styled.section`
     line-height: 2.25rem;
     color: #fff;
   }
-  
+
   @media (max-width: 768px) {
     .form-container {
       padding: 4rem 3vw !important;
@@ -118,13 +117,12 @@ const SubscribeWrapper = styled.section`
       line-height: 3rem;
       margin: 20px 0 10px 0;
     }
-  
   }
   @media (min-width: 768px) {
     .form-container > p {
       margin: 0 25px;
     }
-  
+
     .NAME {
       width: 216px;
       height: 3rem;
@@ -133,7 +131,7 @@ const SubscribeWrapper = styled.section`
       border-radius: 5px;
       padding: 15px;
     }
-    
+
     .EMAIL {
       width: 100%;
       height: 3rem;
@@ -143,9 +141,8 @@ const SubscribeWrapper = styled.section`
       border-radius: 5px;
       padding: 15px;
     }
-  
   }
-  
+
   @media (max-width: 602px) {
     .EMAIL {
       width: 216;
@@ -169,46 +166,45 @@ const SubscribeWrapper = styled.section`
       margin: 20px 0 10px 0;
     }
   }
-  
+
   .box1 {
     flex: wrap;
   }
-  
+
   /* Mailing List */
-  
+
   .heading {
     text-align: center;
     font-weight: bold;
   }
-  
+
   .sub-heading {
     margin: 0rem auto 2rem auto;
     font-size: 1.2rem;
     text-align: center;
   }
-  
+
   .bg-grey-300 {
     background-color: #f1f5f9;
     width: auto;
     margin: 3%;
     padding: 20px;
     border-radius: 0.25rem;
-  
   }
   .bg-grey-300 + .dark {
     background-color: red;
   }
   .bg-single {
-    background-color: #FFF3C5; 
+    background-color: #fff3c5;
   }
   .bg-single .button {
-    background-color: #EBC017;
+    background-color: #ebc017;
   }
   .bg-single .button:hover {
     background-color: #e7cc5f;
   }
   .button {
-    background: #477E96;
+    background: #477e96;
     border-radius: 0.25rem;
     color: #fff;
     display: inline-block;
@@ -218,35 +214,34 @@ const SubscribeWrapper = styled.section`
     text-decoration: none !important;
     margin-left: 6px;
   }
-  
+
   .button:hover {
     background-color: #00d3a9;
   }
-  
+
   h3 {
     font-size: 1.5rem !important;
   }
-  
+
   .p-normal {
     font-size: 16px !important;
   }
-  
-  
+
   .mailing-row {
     display: inline;
     width: 100%;
     justify-content: center;
   }
-  
+
   .mail-link-div {
     margin-top: 7px !important;
   }
-  
+
   a.saffron {
-    color:#EBC017;
+    color: #ebc017;
     font-size: large;
   }
-  
+
   .mailing-container {
     display: flex;
     -ms-flex-wrap: wrap;
@@ -261,9 +256,7 @@ const SubscribeWrapper = styled.section`
     -ms-flex-align: center;
     align-items: center;
   }
-  
-  
-  
+
   @media (min-width: 1076px) {
     .bg-grey-300 {
       margin: 2%;
@@ -291,7 +284,7 @@ const SubscribeWrapper = styled.section`
       margin-top: 0px !important;
     }
   }
-  
+
   @media (min-width: 600px) and (max-width: 800px) {
     .bg-single {
       width: 40%;
@@ -313,7 +306,6 @@ const SubscribeWrapper = styled.section`
       margin: 2%;
     }
   }
-
-  `;
+`;
 
 export default SubscribeWrapper;

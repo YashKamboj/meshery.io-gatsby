@@ -1,19 +1,18 @@
 import styled from "styled-components";
 
 const ForumWrapper = styled.section`
+  margin: 0 12rem;
 
-margin: 0 12rem;
-
-.subscribe-a {
+  .subscribe-a {
     text-align: center;
   }
-  
+
   .subscribe-button {
     width: 100%;
     padding: 0.8rem 0.5rem;
     background: rgba(100, 120, 129, 1);
   }
-    
+
   .NAME {
     width: 80%;
     height: 3rem;
@@ -22,7 +21,7 @@ margin: 0 12rem;
     border-radius: 5px;
     padding: 15px;
   }
-  
+
   .EMAIL {
     width: 80%;
     height: 3rem;
@@ -32,7 +31,7 @@ margin: 0 12rem;
     border-radius: 5px;
     padding: 15px;
   }
-  
+
   .NAME::placeholder,
   .NAME::placeholder,
   .EMAIL::placeholder {
@@ -42,7 +41,7 @@ margin: 0 12rem;
     letter-spacing: 0.5px;
     color: #999999;
   }
-  
+
   .subscribe-inputbox {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +49,7 @@ margin: 0 12rem;
     justify-content: center;
     white-space: nowrap;
   }
-  
+
   .subscribe-button {
     display: flex;
     justify-content: center;
@@ -60,7 +59,7 @@ margin: 0 12rem;
     font-size: 1.125rem;
     letter-spacing: 0.5px;
   }
-  
+
   #mc_embed_signup {
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
@@ -74,21 +73,21 @@ margin: 0 12rem;
     background-color: rgba(255, 152, 0, 0.5);
     text-align: center;
   }
-  
+
   #mc_embed_signup .button:hover {
     background-color: rgba(255, 152, 0, 0.7);
   }
-  
+
   #mc_embed_signup .button {
     margin: 0px;
     background-color: rgba(255, 152, 0, 0.5);
     text-align: center;
   }
-  
+
   #mc_embed_signup .button:hover {
     background-color: rgba(255, 152, 0, 0.7);
   }
-  
+
   .form-container {
     /* border: 1px dashed #1e2117; */
     display: flex;
@@ -97,7 +96,7 @@ margin: 0 12rem;
     /* padding: 5rem  5rem!important; */
     background-color: #3c494f;
   }
-  
+
   .form-container > p {
     font-style: normal;
     font-weight: 600;
@@ -105,7 +104,7 @@ margin: 0 12rem;
     line-height: 2.25rem;
     color: #fff;
   }
-  
+
   @media (max-width: 768px) {
     .form-container {
       padding: 4rem 3vw !important;
@@ -115,13 +114,12 @@ margin: 0 12rem;
       line-height: 3rem;
       margin: 20px 0 10px 0;
     }
-  
   }
   @media (min-width: 768px) {
     .form-container > p {
       margin: 0 25px;
     }
-  
+
     .NAME {
       width: 216px;
       height: 3rem;
@@ -130,7 +128,7 @@ margin: 0 12rem;
       border-radius: 5px;
       padding: 15px;
     }
-    
+
     .EMAIL {
       width: 100%;
       height: 3rem;
@@ -140,9 +138,8 @@ margin: 0 12rem;
       border-radius: 5px;
       padding: 15px;
     }
-  
   }
-  
+
   @media (max-width: 602px) {
     .EMAIL {
       width: 216;
@@ -166,46 +163,45 @@ margin: 0 12rem;
       margin: 20px 0 10px 0;
     }
   }
-  
+
   .box1 {
     flex: wrap;
   }
-  
+
   /* Mailing List */
-  
+
   .heading {
     text-align: center;
     font-weight: bold;
   }
-  
+
   .sub-heading {
     margin: 0rem auto 2rem auto;
     font-size: 1.2rem;
     text-align: center;
   }
-  
+
   .bg-grey-300 {
     background-color: #f1f5f9;
     width: auto;
     margin: 3%;
     padding: 20px;
     border-radius: 0.25rem;
-  
   }
   .bg-grey-300 + .dark {
     background-color: red;
   }
   .bg-single {
-    background-color: #FFF3C5; 
+    background-color: #fff3c5;
   }
   .bg-single .button {
-    background-color: #EBC017;
+    background-color: #ebc017;
   }
   .bg-single .button:hover {
     background-color: #e7cc5f;
   }
   .button {
-    background: #477E96;
+    background: #477e96;
     border-radius: 0.25rem;
     color: #fff;
     display: inline-block;
@@ -215,35 +211,37 @@ margin: 0 12rem;
     text-decoration: none !important;
     margin-left: 6px;
   }
-  
+
   .button:hover {
     background-color: #00d3a9;
   }
-  
+
   h3 {
     font-size: 1.5rem !important;
   }
-  
+
   .p-normal {
     font-size: 16px !important;
   }
-  
-  
+
   .mailing-row {
     display: inline;
     width: 100%;
     justify-content: center;
   }
-  
+
   .mail-link-div {
     margin-top: 7px !important;
   }
-  
+  .mail-link {
+    color: #00d3a9;
+    text-decoration: none;
+  }
   a.saffron {
-    color:#EBC017;
+    color: #ebc017;
     font-size: large;
   }
-  
+
   .mailing-container {
     display: flex;
     -ms-flex-wrap: wrap;
@@ -258,9 +256,7 @@ margin: 0 12rem;
     -ms-flex-align: center;
     align-items: center;
   }
-  
-  
-  
+
   @media (min-width: 1076px) {
     .bg-grey-300 {
       margin: 2%;
@@ -288,7 +284,7 @@ margin: 0 12rem;
       margin-top: 0px !important;
     }
   }
-  
+
   @media (min-width: 600px) and (max-width: 800px) {
     .bg-single {
       width: 40%;
@@ -312,4 +308,4 @@ margin: 0 12rem;
   }
 `;
 
-export default ForumWrapper 
+export default ForumWrapper;

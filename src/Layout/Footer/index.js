@@ -1,28 +1,26 @@
-import React from 'react';
+import React from "react";
 import SlackIcon from "../../assets/images/social-icons/slack.svg";
 import DockerIcon from "../../assets/images/social-icons/docker.svg";
 import YoutubeIcon from "../../assets/images/social-icons/youtube.svg";
 import TwitterIcon from "../../assets/images/social-icons/twitter.svg";
 import GithubIcon from "../../assets/images/social-icons/github.svg";
 import CalendarIcon from "../../assets/images/social-icons/calendar.png";
-import FooterWrapper from './Footer.styles';
+import FooterWrapper from "./Footer.styles";
 
 const Footer = () => {
   return (
-    <FooterWrapper> 
+    <FooterWrapper>
       <div className="container">
-        <div className='footer-links community'> 
+        <div className="footer-links community">
           <h3 className="section-title">
-            <a className="title-link" href='https://layer5.io/community'>
+            <a className="title-link" href="https://layer5.io/community">
               Community
             </a>
           </h3>
           <ul className="section-categories">
             <li>
-              <a
-                className="category-link"
-                href="https://layer5.io/blog"
-              >Blog
+              <a className="category-link" href="https://layer5.io/blog">
+                Blog
               </a>
             </li>
             <li>
@@ -42,13 +40,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="/service-mesh-landscape"
-              >
+              <a className="category-link" href="/service-mesh-landscape">
                 Slack
               </a>
-            </li>                  
+            </li>
             <li>
               <a
                 className="category-link"
@@ -58,27 +53,22 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://discuss.layer5.io/"
-              >
+              <a className="category-link" href="https://discuss.layer5.io/">
                 Forum
               </a>
             </li>
           </ul>
         </div>
-        <div className='footer-links getting-started'> 
+        <div className="footer-links getting-started">
           <h3 className="section-title">
-            <a className="title-link" href='https://layer5.io/community'>
+            <a className="title-link" href="https://layer5.io/community">
               Getting Started
             </a>
           </h3>
           <ul className="section-categories">
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/features"
-              >Features
+              <a className="category-link" href="https://meshery.io/features">
+                Features
               </a>
             </li>
             <li>
@@ -90,18 +80,15 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://docs.meshery.io/"
-              >
+              <a className="category-link" href="https://docs.meshery.io/">
                 Docs
               </a>
             </li>
           </ul>
         </div>
-        <div className='footer-links resources'> 
+        <div className="footer-links resources">
           <h3 className="section-title">
-            <a className="title-link" href='https://layer5.io/resources'>
+            <a className="title-link" href="https://layer5.io/resources">
               Resources
             </a>
           </h3>
@@ -110,7 +97,8 @@ const Footer = () => {
               <a
                 className="category-link"
                 href="https://layer5.io/service-mesh-landscape"
-              >Service Mesh Comparison
+              >
+                Service Mesh Comparison
               </a>
             </li>
             <li>
@@ -136,7 +124,7 @@ const Footer = () => {
               >
                 Service Mesh Workshops
               </a>
-            </li>                  
+            </li>
             <li>
               <a
                 className="category-link"
@@ -147,9 +135,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className='footer-links socials'> 
+        <div className="footer-links socials">
           <h3 className="section-title">
-            <a className="title-link" href='https://layer5.io/resources'>
+            <a className="title-link" href="https://layer5.io/resources">
               Socials
             </a>
           </h3>
@@ -159,15 +147,12 @@ const Footer = () => {
                 className="category-link"
                 href="https://twitter.com/mesheryio/"
               >
-                <img src={TwitterIcon} alt="Twitter Icon"/>
+                <img src={TwitterIcon} alt="Twitter Icon" />
                 Twitter
               </a>
             </li>
             <li>
-              <a
-                className="category-link"
-                href="https://meshery.io/calendar"
-              >
+              <a className="category-link" href="https://meshery.io/calendar">
                 <img src={CalendarIcon} alt="Calendar Icon" />
                 Calender
               </a>
@@ -189,7 +174,7 @@ const Footer = () => {
                 <img src={DockerIcon} alt="Docker Icon" />
                 Docker Hub
               </a>
-            </li>                  
+            </li>
             <li>
               <a
                 className="category-link"
@@ -214,10 +199,14 @@ const Footer = () => {
       <div className="container flex copyright">
         <div className="text">&copy; 2022 The Meshery Authors</div>
         <div className="text">Proudly representing every service mesh</div>
-        <div className="text"><a href="https://github.com/meshery/meshery/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a></div>
+        <div className="text">
+          <a href="https://github.com/meshery/meshery/blob/master/CODE_OF_CONDUCT.md">
+            Code of Conduct
+          </a>
+        </div>
       </div>
-    </FooterWrapper> 
-  )
-}
+    </FooterWrapper>
+  );
+};
 
 export default Footer;

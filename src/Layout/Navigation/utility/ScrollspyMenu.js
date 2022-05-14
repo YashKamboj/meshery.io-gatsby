@@ -6,14 +6,14 @@ const ScrollspyMenu = ({ menuItems, ...props }) => {
   const addAllClasses = [""];
 
   const [state, setState] = useState({
-    active: menuItems[0]
+    active: menuItems[0],
   });
 
   const wrapRef = useRef(null);
 
   const handleMouseOver = (index) => {
     setState({
-      active: menuItems[index]
+      active: menuItems[index],
     });
   };
 
@@ -36,7 +36,11 @@ const ScrollspyMenu = ({ menuItems, ...props }) => {
   const { active } = state;
 
   return (
-    <ul className={addAllClasses.join(" ")} onMouseOver={wrapDisplay} onMouseOut={wrapNone}>
+    <ul
+      className={addAllClasses.join(" ")}
+      onMouseOver={wrapDisplay}
+      onMouseOut={wrapNone}
+    >
       {menuItems.map((menu, index) => (
         <li
           key={index}
@@ -46,9 +50,7 @@ const ScrollspyMenu = ({ menuItems, ...props }) => {
           onMouseOver={() => handleMouseOver(index)}
         >
           <AnchorLink to={menu.path} className="menu-link">
-            <span>
-              {menu.name}
-            </span>
+            <span>{menu.name}</span>
           </AnchorLink>
         </li>
       ))}
@@ -56,19 +58,29 @@ const ScrollspyMenu = ({ menuItems, ...props }) => {
         <React.Fragment>
           <ul className="dropdown" style={{ zIndex: "101" }}>
             {/* <div className="nav-grid"> */}
-              <div className="hr">
-                {active.subItems.map((subItem, i) => (
-                  <li key={i}>
-                    { subItem.name === "Forum" ?
-                      <a href={subItem.path} target="_blank" className="sub-item" rel="noreferrer">
-                        {subItem.name}
-                      </a>
-                      : <Link to={subItem.path} partiallyActive={true} className={subItem.sepLine && "sub-item"}>
-                        {subItem.name}
-                      </Link>
-                    }
-                  </li>
-                ))}
+            <div className="hr">
+              {active.subItems.map((subItem, i) => (
+                <li key={i}>
+                  {subItem.name === "Forum" ? (
+                    <a
+                      href={subItem.path}
+                      target="_blank"
+                      className="sub-item"
+                      rel="noreferrer"
+                    >
+                      {subItem.name}
+                    </a>
+                  ) : (
+                    <Link
+                      to={subItem.path}
+                      partiallyActive={true}
+                      className={subItem.sepLine && "sub-item"}
+                    >
+                      {subItem.name}
+                    </Link>
+                  )}
+                </li>
+              ))}
               {/* </div> */}
             </div>
           </ul>

@@ -1,12 +1,12 @@
-import * as React from "react"
-import Layout from "../Layout/layout"
+import * as React from "react";
+import Layout from "../Layout/layout";
 
 const BlogPage = () => {
-return(
+  return (
     <Layout>
-    <h1>BlogPage</h1>
+      <h1>BlogPage</h1>
     </Layout>
-)
+  );
 };
 
-export default BlogPage
+export default BlogPage;
