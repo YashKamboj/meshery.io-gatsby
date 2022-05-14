@@ -25,9 +25,9 @@ const NavigationWrap = styled.header`
     }
 
     .runmesherybtn{
-      border: 1px #ccc solid;
+      border: 1px #00b39f solid;
 	    border-radius: 5px;
-      color: white;
+      color: #00b39f;
       font-size: 0.9rem;
       background-color: Transparent;
       width: 7rem;

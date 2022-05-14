@@ -19,8 +19,6 @@ const ProgramsWrapper = styled.section`
 
   .smallcard-a {
     font-size: 1.2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.8rem;
     background-color: #3eb5a1;
     position: relative;
     text-decoration: none;
@@ -56,6 +54,7 @@ const ProgramsWrapper = styled.section`
 
   .minicard-span {
     text-align: center;
+    vertical-align: middle;
     width: 20%;
     font-size: 1.3rem;
     line-height: 110%;
