@@ -68,8 +68,6 @@ margin: 0 12rem;
     margin-top: 25px;
   }
   
-  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
   #mc_embed_signup .button {
     width: 100%;
     margin: 0px;

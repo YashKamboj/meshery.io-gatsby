@@ -11,7 +11,7 @@ const AdapterTable = () => {
 
   return (
     <AdapterTableWrapper>
-        <div className="text ">
+        <div className="text">
           <h2>Interoperate <strong>multiple</strong> service meshes</h2>
           <p>Service mesh adapters provision, configure, and manage their respective service meshes.
           </p></div>

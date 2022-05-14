@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { GettingStartedWrapper } from "./gettingstarted.styles";
+import { MesheryPlatformsWrapper } from "./gettingstarted.styles";
 import { Col, Container, Row } from "../../reusecore/Layout";
 import Button from "../../reusecore/Button";
-import Code from "../../../components/CodeBlock";
+import Code from "../CodeBlock";
 import dedent from "dedent";
 import Apple from "./supported-icons/apple.svg";
 import Docker from "./supported-icons/docker_white.svg";
@@ -200,7 +200,7 @@ const MesheryPlatforms = () => {
 
   
   return (
-    <GettingStartedWrapper>
+    <MesheryPlatformsWrapper>
       <div className="content">
         <Row Hcenter className="step-1">
           <p>1 step install to managing service meshes</p>
@@ -229,7 +229,7 @@ const MesheryPlatforms = () => {
           </Col>
         </Row>
       </div>
-    </GettingStartedWrapper>
+    </MesheryPlatformsWrapper>
   );
 
 };

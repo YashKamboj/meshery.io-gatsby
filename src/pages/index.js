@@ -8,6 +8,7 @@ import Overview from "../components/Overview";
 import AdapterTable from "../components/Adapter-table";
 import Companies from "../components/Used by companies";
 import Hero from "../components/hero-banner";
+import MesheryPlatforms from "../components/Getting-Started"
 
 import cncfLogo from "../assets/images/cncf-horizontal-color.svg";
 import layer5logo from "../assets/images/layer5-no-trim.svg";
@@ -23,7 +24,7 @@ const IndexPage = () => {
         <AdapterTable />
         <Companies />
         <Overview />
-        {/* <GettingStarted /> */}
+        <MesheryPlatforms />
         <Projects />
         <section
           className="bg-white"
