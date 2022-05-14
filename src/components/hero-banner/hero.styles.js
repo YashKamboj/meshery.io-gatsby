@@ -4,11 +4,7 @@ const HeroWrapper = styled.section`
 .hero {
     color: #ffffff;
     text-align: center;
-    background: linear-gradient(
-        to bottom,
-        #3c494f 0%,
-        #00d3a9 100%
-      );
+    background-color: #222222;
     padding-top: 9px;
   
     p {
