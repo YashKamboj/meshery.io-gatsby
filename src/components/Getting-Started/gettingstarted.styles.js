@@ -2,19 +2,17 @@ import styled from "styled-components";
 
 export const MesheryPlatformsWrapper = styled.div`
    margin-top: 5rem;
-   background-color: ${props => props.theme.black};
-   transform: skew(0deg, -5deg);
+   background-color: black;
    width: 100%;
   .content{ 
     margin-top: -6rem;
     z-index: -1;
       padding-top: 4rem;
       padding-bottom: 4rem;
-      transform: skew(0deg, 5deg);
       text-align: center;
-      color: ${props => props.theme.white};
+      color: white;
       h1,h2,h3,h4,h5,h6 {
-        color: ${props => props.theme.white};
+        color: white;
       }
       .step-1 {
         margin: 0 auto;
@@ -39,10 +37,10 @@ export const MesheryPlatformsWrapper = styled.div`
           max-width: 12rem;
           border-radius: 1rem;
           margin-bottom: 2rem; 
-          background-color: ${props => props.theme.tertiaryColor};
+          background-color: #1e2117;
           
           &:hover {
-            background-color: ${props => props.theme.secondaryColor};
+            background-color: #00b39f;
           }
           
           img {
@@ -50,7 +48,7 @@ export const MesheryPlatformsWrapper = styled.div`
           }
         }
         .single-platform-selected {
-          background-color: ${props => props.theme.secondaryColor};
+          background-color: #00b39f;
         }
         
       }
