@@ -4,6 +4,10 @@ const InfoBannerStyle = styled.section`
   margin: 0rem 0 5rem
   position: relative;
   overflow: hidden;
+
+  .cont-row-reverse{
+      flex-direction: row-reverse;
+  }
   .title { 
     text-transform: uppercase;
     color: #A0AAAA;

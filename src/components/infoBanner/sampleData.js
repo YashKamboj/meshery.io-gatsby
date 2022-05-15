@@ -8,6 +8,7 @@ import infoImage6 from "../../assets/images/smi-conformance.png";
 
 const Data = [
   {
+    index: 1,
     img: infoImage1,
     title: "Operate with configuration best practices",
     content:
@@ -15,6 +16,7 @@ const Data = [
     button: "learn more",
   },
   {
+    index: 2,
     img: infoImage2,
     title: "Use the Service Mesh Performance standard",
     content:
@@ -22,24 +24,28 @@ const Data = [
     button: "See the Meshery Documentation",
   },
   {
+    index: 3,
     img: infoImage3,
     title: "Is your service mesh SMI compliant?",
     content:
       "Validate your service mesh's conformance to Service Mesh Interface (SMI) specifications.",
   },
   {
+    index: 4,
     img: infoImage4,
     title: "Manage data plane intelligence with WebAssembly filters",
     content:
       "Dynamically load and manage your own WebAssembly filters in Envoy-based service meshes. ",
   },
-  {
+  {  
+    index: 5,
     img: infoImage5,
     title: "Which service mesh should I use and how do I get started?",
     content:
       "Learn about the functionality of different service meshes and visually manipulate mesh configuration.",
   },
-  {
+  { 
+    index: 6,
     img: infoImage6,
     title: "Manage the performance of your service mesh and its workloads",
     content:
