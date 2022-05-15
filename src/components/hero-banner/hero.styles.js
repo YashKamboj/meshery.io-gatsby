@@ -15,6 +15,9 @@ const HeroWrapper = styled.section`
     .text-container {
       margin: 1rem 0rem 5rem 0rem;
     }
+    a {
+      text-decoration: none;
+    }
   }
 `;
 

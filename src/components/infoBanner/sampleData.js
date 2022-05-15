@@ -37,14 +37,14 @@ const Data = [
     content:
       "Dynamically load and manage your own WebAssembly filters in Envoy-based service meshes. ",
   },
-  {  
+  {
     index: 5,
     img: infoImage5,
     title: "Which service mesh should I use and how do I get started?",
     content:
       "Learn about the functionality of different service meshes and visually manipulate mesh configuration.",
   },
-  { 
+  {
     index: 6,
     img: infoImage6,
     title: "Manage the performance of your service mesh and its workloads",

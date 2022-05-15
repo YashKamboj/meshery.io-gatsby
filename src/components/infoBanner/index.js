@@ -10,7 +10,9 @@ function InfoBanner() {
       <Container fullWidthSM>
         {Data.map((Data) => {
           return (
-            <Row className={ (Data.index) % 2 === 1 ? "cont-row-reverse" : "cont-row"}>
+            <Row
+              className={Data.index % 2 === 1 ? "cont-row-reverse" : "cont-row"}
+            >
               <Col xs={12} sm={12} md={6}>
                 <Link to="/service-mesh-management/meshery">
                   <img
@@ -19,8 +21,8 @@ function InfoBanner() {
                     src={Data.img}
                   />
                 </Link>
-                </Col>
-              <Col xs={12} sm={12} md={6}>    
+              </Col>
+              <Col xs={12} sm={12} md={6}>
                 <div className="side">
                   <div className="side-text">
                     <p>{Data.title}</p>
@@ -36,7 +38,7 @@ function InfoBanner() {
                     </Link>
                   </div>
                 </div>
-                </Col>
+              </Col>
             </Row>
           );
         })}

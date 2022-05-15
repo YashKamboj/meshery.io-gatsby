@@ -17,6 +17,8 @@ const ProjectItemWrapper = styled.section`
       line-height: 24px;
       font-weight: 800;
       margin-bottom: 4px;
+      inline-size: 150px;
+      overflow-wrap: break-word;
     }
 
     p {

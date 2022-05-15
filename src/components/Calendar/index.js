@@ -10,7 +10,6 @@ import Table from "../MeetInfo-Table";
 import { meet_links_data } from "./meetLinksData";
 
 const Calendar = () => {
-
   const columns = React.useMemo(
     () => [
       {
@@ -24,7 +23,7 @@ const Calendar = () => {
       {
         Header: "Slack Channel",
         id: "slack_channel",
-        accessor: meet_links_data => {
+        accessor: (meet_links_data) => {
           return (
             <>
               {
@@ -34,52 +33,36 @@ const Calendar = () => {
               }
             </>
           );
-        }
+        },
       },
       {
         Header: "Meeting Minutes",
         id: "meeting_minutes",
-        accessor: meet_links_data => {
-          return (
-            <>
-              {
-                <a href={meet_links_data.meeting_minutes}>
-                                    Minutes
-                </a>
-              }
-            </>
-          );
-        }
+        accessor: (meet_links_data) => {
+          return <>{<a href={meet_links_data.meeting_minutes}>Minutes</a>}</>;
+        },
       },
       {
         Header: "Meeting Link",
         id: "meeting_link",
-        accessor: meet_links_data => {
-          return (
-            <>
-              {
-                <a href={meet_links_data.meeting_link}>
-                                    Zoom
-                </a>
-              }
-            </>
-          );
-        }
+        accessor: (meet_links_data) => {
+          return <>{<a href={meet_links_data.meeting_link}>Zoom</a>}</>;
+        },
       },
       {
         Header: "Meeting Recordings",
         id: "meeting_recordings",
-        accessor: meet_links_data => {
+        accessor: (meet_links_data) => {
           return (
             <>
-              {meet_links_data.slack_channel !== "#smi" ?
-                <a href={meet_links_data.meeting_recordings}>
-                                    YouTube
-                </a>: "N/A"
-              }
+              {meet_links_data.slack_channel !== "#smi" ? (
+                <a href={meet_links_data.meeting_recordings}>YouTube</a>
+              ) : (
+                "N/A"
+              )}
             </>
           );
-        }
+        },
       },
     ],
     []
@@ -89,37 +72,39 @@ const Calendar = () => {
 
   return (
     <CalendarStyleWrapper>
-      <h1>
-        Community Calendar
-        
-      </h1>
+      <h1>Community Calendar</h1>
       <p>Join any or all of the weekly meetings</p>
       <div>
         <Container>
           <div className="calendar-wrapper">
             <div className="calendar-grid">
               <FullCalendar
-                plugins={[dayGridPlugin, interactionPlugin, googleCalendarPlugin]}
+                plugins={[
+                  dayGridPlugin,
+                  interactionPlugin,
+                  googleCalendarPlugin,
+                ]}
                 initialView="dayGridMonth"
-                googleCalendarApiKey='AIzaSyDcmx-nLYfqvrfpEmVJuclwt9akayYfUgg'
+                googleCalendarApiKey="AIzaSyDcmx-nLYfqvrfpEmVJuclwt9akayYfUgg"
                 events={{
-                  googleCalendarId: "layer5.io_eh2aa9dpf1g40elvoc762jnphs@group.calendar.google.com",
+                  googleCalendarId:
+                    "layer5.io_eh2aa9dpf1g40elvoc762jnphs@group.calendar.google.com",
                 }}
                 buttonText={{
-                  today: "Today"
+                  today: "Today",
                 }}
                 customButtons={{
                   addToCalendar: {
                     text: "Add To Your Calendar",
                     click: function () {
                       window.open("https://bit.ly/2SbrRhe", "_blank");
-                    }
-                  }
+                    },
+                  },
                 }}
                 headerToolbar={{
                   left: "prev,next today",
                   center: "title",
-                  right: "addToCalendar"
+                  right: "addToCalendar",
                 }}
                 showNonCurrentDates={false}
                 contentHeight={700}
