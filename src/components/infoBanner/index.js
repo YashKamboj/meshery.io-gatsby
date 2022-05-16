@@ -4,7 +4,7 @@ import InfoBannerStyle from "./infoBanner.style";
 import { Link } from "gatsby";
 import Data from "./sampleData";
 
-function InfoBanner() {
+function InfoBanner({}) {
   return (
     <InfoBannerStyle>
       <Container fullWidthSM>
@@ -22,14 +22,19 @@ function InfoBanner() {
                 </Col>
               <Col xs={12} sm={12} md={6}>    
                 <div className="side">
+                <div className= {(Data.titleimg) === "none" ? "noimg" : "title_img" }>
+                  <img alt="titleimg" src={Data.titleimg} />
+                  </div>
+
                   <div className="side-text">
-                    <p>{Data.title}</p>
+                  <img className= {(Data.headingimg) === "none" ? "noimg" : "heading_img" } src={Data.headingimg} /> 
+                   <h1>{Data.title}</h1>
                   </div>
                   <div className="description">
                     <p>{Data.content}</p>
                   </div>
 
-                  <div className="backBtn">
+                  <div className= {(Data.button) === "" ? "nobtn" : "backBtn"}>
                     <br />
                     <Link to="/service-mesh-management/meshery">
                       <button>{Data.button}</button>

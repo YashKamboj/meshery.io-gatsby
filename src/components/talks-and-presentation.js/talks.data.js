@@ -1,15 +1,15 @@
-const tutorial_data = [
+const talks_data = [
     {
         date: "Oct. 1st, 2020",
-        topic: "An Introduction to Contributing to Meshery",
+        topic: "Solving the Service Mesh Adopter's Dilemma",
         resources: {
             slides: "https://docs.google.com/presentation/d/1Wc5ALdn-G3fADJ8I6nJlyOGhV2XHVprYPqDvkZ1MEqY/edit#",
             recording: "https://youtu.be/67iy2JEp4Ss",
         },
         presenters: [
             {
-                link: "/community/members/vijay-cherukuri",
-                name: "Vijay Cherukuri",
+                link: "/community/members/lee-calcote",
+                name: "Lee Calcote",
             },
         ],
     },
@@ -131,4 +131,4 @@ const tutorial_data = [
     },     
 ];
 
-export default tutorial_data;
+export default talks_data;
