@@ -4,7 +4,17 @@ const InfoBannerStyle = styled.section`
   margin: 0rem 0 5rem
   position: relative;
   overflow: hidden;
-
+  
+  .noimg{
+      display: none;
+  }
+   .heading_img{
+       width: 30%;
+       height: auto;
+   }
+  .nobtn{
+    display: none;
+  }
   .cont-row-reverse{
       flex-direction: row-reverse;
   }
@@ -13,6 +23,7 @@ const InfoBannerStyle = styled.section`
     color: #A0AAAA;
   }
   .side-text {
+      display: flex;
     font-size: 1.45rem;
     font-weight: 600;
     line-height: 2rem;
@@ -22,6 +33,10 @@ const InfoBannerStyle = styled.section`
     span {
            font-weight: 600;
             color: ${(props) => props.theme.keppelColor};
+        }
+
+        h1{
+            font-size: 3rem;
         }
    }
    .side{

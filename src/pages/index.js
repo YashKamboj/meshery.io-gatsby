@@ -64,6 +64,7 @@ const IndexPage = () => {
           className="reversehero"
           style={{
             display: "flex",
+            flexWrap: "wrap",
             gap: "3rem",
             justifyContent: "center",
             color: "#ffffff",
