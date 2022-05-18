@@ -9,7 +9,6 @@ import smplogo from "../../assets/images/smp-dark-text-side.svg";
 import smilogo from "../../assets/images/servicemeshinterface-icon-color.svg";
 import wasmlogo from "../../assets/images/webassembly_logo.svg";
 
-
 const Data = [
   {
     index: 1,
@@ -40,7 +39,6 @@ const Data = [
     content:
       "Validate your service mesh's conformance to Service Mesh Interface (SMI) specifications.",
     button: "",
-
   },
   {
     index: 4,
@@ -52,7 +50,7 @@ const Data = [
       "Dynamically load and manage your own WebAssembly filters in Envoy-based service meshes. ",
     button: "",
   },
-  {  
+  {
     index: 5,
     img: infoImage5,
     title: "Which service mesh should I use and how do I get started?",
@@ -61,9 +59,8 @@ const Data = [
     content:
       "Learn about the functionality of different service meshes and visually manipulate mesh configuration.",
     button: "",
-
   },
-  { 
+  {
     index: 6,
     img: infoImage6,
     title: "Manage the performance of your service mesh and its workloads",
@@ -72,7 +69,6 @@ const Data = [
     content:
       "Use performance profiles to track the historical performance of your workloads",
     button: "",
-
   },
 ];
 

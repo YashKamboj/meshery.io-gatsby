@@ -50,6 +50,7 @@ export const MesheryPlatformsWrapper = styled.div`
 
         img {
           height: 3.5rem;
+          margin-bottom: 0;
         }
       }
       .single-platform-selected {

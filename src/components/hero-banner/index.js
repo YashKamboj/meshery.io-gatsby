@@ -19,7 +19,6 @@ const Hero = () => {
             <Button
               secondary
               className="banner-btn two"
-              style={{ textDecoration: "none" }}
               title="Get Started"
               url="/service-mesh-management/meshery"
             />
