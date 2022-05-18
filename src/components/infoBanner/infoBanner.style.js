@@ -9,19 +9,32 @@ const InfoBannerStyle = styled.section`
       display: none;
   }
    .heading_img{
-       width: 30%;
-       height: auto;
+       width: 20%;
+       height: 20%;
+       margin-bottom :0;
+       img{
+           margin-bottom :0;
+       }
    }
   .nobtn{
     display: none;
   }
   .cont-row-reverse{
       flex-direction: row-reverse;
+      margin: 4rem 0;
+  }
+  .cont-row{
+    margin: 4rem 0;
   }
   .title { 
     text-transform: uppercase;
     color: #A0AAAA;
   }
+  .title_img{
+      img{
+      margin: 0 0 -4rem;
+      }
+    }
   .side-text {
       display: flex;
     font-size: 1.45rem;
@@ -36,7 +49,7 @@ const InfoBannerStyle = styled.section`
         }
 
         h1{
-            font-size: 3rem;
+            font-size: 2.2rem;
         }
    }
    .side{
