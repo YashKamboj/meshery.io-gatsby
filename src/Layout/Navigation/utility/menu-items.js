@@ -16,7 +16,6 @@ const MenuItems = [
   },
   {
     name: "Community",
-    // path: "/projects",
     subItems: [
       {
         name: "Calender",
@@ -57,7 +56,6 @@ const MenuItems = [
   },
   {
     name: "Resources",
-    // path: "/learn",
     subItems: [
       {
         name: "Service Mesh Catalog",

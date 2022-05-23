@@ -1,10 +1,6 @@
- const filtersoption =
- [
-     {
-         name: "Categories",
-         value: [
-             
-         ]
-         
-     }
- ]
+const filtersoption = [
+  {
+    name: "Categories",
+    value: [],
+  },
+];

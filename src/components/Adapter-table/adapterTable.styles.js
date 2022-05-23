@@ -13,7 +13,6 @@ const AdapterTableWrapper = styled.section`
     height: 30px;
     width: 30px;
     vertical-align: middle;
-
   }
 
   table.adapters {
@@ -26,7 +25,7 @@ const AdapterTableWrapper = styled.section`
       border: 1px dashed #cccccc;
       border-right-width: 0px;
       border-left-width: 0px;
-      a{
+      a {
         text-decoration: none;
         color: #00a4ca;
       }

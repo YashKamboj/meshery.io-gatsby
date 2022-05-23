@@ -35,7 +35,10 @@ const Navigation = () => {
 
   return (
     <NavigationWrap className={`nav-block ${scroll ? "scrolled" : ""}`}>
-      <Container className="nav-container" style={{maxWidth:"1140px", margin: "auto"}}>
+      <Container
+        className="nav-container"
+        style={{ maxWidth: "1140px", margin: "auto" }}
+      >
         <div className="navbar-wrap">
           <Link to="/">
             <img
