@@ -35,14 +35,14 @@ const Navigation = () => {
 
   return (
     <NavigationWrap className={`nav-block ${scroll ? "scrolled" : ""}`}>
-      <Container className="nav-container">
+      <Container className="nav-container" style={{maxWidth:"1140px", margin: "auto"}}>
         <div className="navbar-wrap">
           <Link to="/">
             <img
               src={MesheryText}
               style={{ margin: "2rem 0" }}
               alt="MesheryText"
-              height="40"
+              height="45"
             />
           </Link>
           <nav className="nav">

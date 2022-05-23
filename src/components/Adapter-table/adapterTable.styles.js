@@ -9,9 +9,11 @@ const AdapterTableWrapper = styled.section`
   margin: 0 auto;
 
   .adapter-logo {
-    margin-right: 5px;
+    margin: 10px 5px 10px 0;
     height: 30px;
     width: 30px;
+    vertical-align: middle;
+
   }
 
   table.adapters {
@@ -24,6 +26,10 @@ const AdapterTableWrapper = styled.section`
       border: 1px dashed #cccccc;
       border-right-width: 0px;
       border-left-width: 0px;
+      a{
+        text-decoration: none;
+        color: #00a4ca;
+      }
     }
 
     td:hover {

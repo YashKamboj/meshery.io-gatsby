@@ -43,7 +43,7 @@ function InfoBanner({}) {
                     <p>{Data.content}</p>
                   </div>
 
-                  <div className={Data.button === "" ? "nobtn" : "backBtn"}>
+                  <div className={Data.button === "" ? "nobtn" : "Btn"}>
                     <br />
                     <Link to="/service-mesh-management/meshery">
                       <button>{Data.button}</button>

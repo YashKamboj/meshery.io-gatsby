@@ -38,7 +38,7 @@ const Data = [
     headingimg: smilogo,
     content:
       "Validate your service mesh's conformance to Service Mesh Interface (SMI) specifications.",
-    button: "",
+    button: "See the Service Mesh Interface Conformance Report",
   },
   {
     index: 4,
@@ -58,7 +58,7 @@ const Data = [
     headingimg: "none",
     content:
       "Learn about the functionality of different service meshes and visually manipulate mesh configuration.",
-    button: "",
+    button: "See the Meshery documentation",
   },
   {
     index: 6,

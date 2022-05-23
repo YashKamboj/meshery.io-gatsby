@@ -5,15 +5,31 @@ const InfoBannerStyle = styled.section`
   position: relative;
   overflow: hidden;
   
+  .Btn{
+      align-items: center;
+      margin: auto;
+    button{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background: #3c494f;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.5);
+    width: auto;
+      }
+  }
   .noimg{
       display: none;
   }
    .heading_img{
-       width: 20%;
-       height: 20%;
-       margin-bottom :0;
+       max-width: 30%;
+    //    height: 20%;
+       margin-right : 1rem;
+    
        img{
            margin-bottom :0;
+       margin-right : 1rem;
+        
        }
    }
   .nobtn{

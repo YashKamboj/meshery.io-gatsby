@@ -15,9 +15,11 @@ const NavigationWrap = styled.header`
     
   }
   .meshery-cta {
-    position: relative;
-    right: 0rem;
-    top: 1.5rem;
+    position: absolute;
+    right: 19rem;
+    // left: 0;
+    top: 2rem;
+    // bottom: 1.5rem;
     max-height: 50px;
 
     a {
@@ -63,10 +65,11 @@ const NavigationWrap = styled.header`
   }
   .dropdown {
     position: absolute;
+
     background: #ddd;
     opacity: 0;
-    top: 100%;
-    // left: 0;
+    top: 60%;
+    left: 49rem;
     width: auto;
     display: block;
     // box-shadow: 0px 5px 10px 1px rgba(0, 179, 159, 0.50);
