@@ -4,11 +4,34 @@ const CardWrapper = styled.section`
   width: auto;
   flex-direction: row-reverse;
 
+  width: auto;
+  flex-direction: row-reverse;
+
+  .chip {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    float: right;
+    background-color: #b6d7a8ff;
+    border: none;
+    cursor: default;
+    height: 23px;
+    outline: none;
+    padding-left: 5px;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    white-space: nowrap;
+    align-items: center;
+    border-radius: 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    justify-content: center;
+  }
   .card {
     position: relative;
-    width: 220px;
-    height: 300px;
+    width: 261px;
+    height: 335px;
     padding: 20px;
+    margin-right: 0;
     border-radius: 15px;
     border: 0;
     transition: 0.4s ease-out;
@@ -22,7 +45,8 @@ const CardWrapper = styled.section`
     cursor: pointer;
   }
   .pattern-name {
-    margin-top: 0;
+    margin-top: 2rem;
+    text-align: center;
   }
   .pattern-image {
     margin: 0;
@@ -73,6 +97,13 @@ const CardWrapper = styled.section`
     color: white;
     opacity: 0.7;
   }
+  .pattern-id {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 10px;
+    margin-right: 14px;
+  }
   .catalog {
     padding-top: 5rem;
   }
@@ -108,6 +139,15 @@ const CardWrapper = styled.section`
     right: 0;
     vertical-align: middle;
     padding-right: 2px;
+    margin-bottom: 0;
+  }
+
+  .wasm {
+    width: 20px;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+    bottom: 0;
+    right: 0;
   }
   .tooltip-modal:hover .tooltiptext-modal {
     visibility: visible;

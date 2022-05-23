@@ -101,7 +101,7 @@ const patternsdata = [
       technology: "",
     },
     patternId: "MESHERY006",
-    image: "/images/patterns/service-mesh.svg",
+    image: pattern1,
     Status: "ComingSoon",
     patternInfo:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pulvinar placerat tellus sed posuere. Nulla venenatis fringilla faucibus. Etiam et commodo dolor, sit amet fringilla leo. Nullam tristique tristique condimentum. Maecenas sollicitudin scelerisque egestas. Suspendisse aliquet elit quis dolor gravida, et auctor ligula ornare. Nullam et sodales ante, quis varius elit. Nullam cursus, orci eleifend tristique semper, neque nisl tincidunt purus, sed ultricies felis arcu vel metus.",
@@ -146,7 +146,7 @@ const patternsdata = [
   },
   {
     name: "Segmenting the Monolith",
-    filters: {
+    filter: {
       type: "Workloads",
       compatibility: ["Linkerd"],
       technology: "",
@@ -163,7 +163,7 @@ const patternsdata = [
   },
   {
     name: "Brownfield Environments",
-    filters: {
+    filter: {
       type: "Worloads",
       compatibility: ["Linkerd"],
       technology: "",
@@ -180,7 +180,7 @@ const patternsdata = [
   },
   {
     name: "Service Mesh Adapter",
-    filters: {
+    filter: {
       type: "Traffic Management",
       compatibility: ["Linkerd"],
       technology: "",
@@ -197,7 +197,7 @@ const patternsdata = [
   },
   {
     name: "Data Plane extensibility",
-    filters: {
+    filter: {
       type: "Observability",
       compatibility: ["Linkerd"],
       technology: "",
@@ -214,7 +214,7 @@ const patternsdata = [
   },
   {
     name: "Debugging Control Plane",
-    filters: {
+    filter: {
       type: "Troubleshooting",
       compatibility: ["Linkerd"],
       technology: "",
@@ -231,7 +231,7 @@ const patternsdata = [
   },
   {
     name: "Load balancing Algs",
-    filters: {
+    filter: {
       type: "Traffic Management",
       compatibility: ["Linkerd"],
       technology: "",
@@ -248,7 +248,7 @@ const patternsdata = [
   },
   {
     name: "Retries",
-    filters: {
+    filter: {
       type: "Traffic Management",
       compatibility: ["Linkerd"],
       technology: "",
@@ -265,7 +265,7 @@ const patternsdata = [
   },
   {
     name: "Ingress",
-    filters: {
+    filter: {
       type: "Traffic Management",
       compatibility: ["Linkerd"],
       technology: "",
@@ -282,7 +282,7 @@ const patternsdata = [
   },
   {
     name: "Foundational Traffic Routing",
-    filters: {
+    filter: {
       type: "Security",
       compatibility: ["Linkerd"],
       technology: "",
@@ -299,7 +299,7 @@ const patternsdata = [
   },
   {
     name: "Federation",
-    filters: {
+    filter: {
       type: "Scaling",
       compatibility: ["Linkerd"],
       technology: "",
@@ -316,7 +316,7 @@ const patternsdata = [
   },
   {
     name: "Multi-cluster failover",
-    filters: {
+    filter: {
       type: "Scaling",
       compatibility: ["Linkerd"],
       technology: "",
@@ -333,7 +333,7 @@ const patternsdata = [
   },
   {
     name: "Cloud bursting",
-    filters: {
+    filter: {
       type: "Scaling",
       compatibility: ["Linkerd"],
       technology: "",
@@ -350,7 +350,7 @@ const patternsdata = [
   },
   {
     name: "Sidecar Proxies",
-    filters: {
+    filter: {
       type: "Deployment",
       compatibility: ["Linkerd"],
       technology: "",
@@ -367,7 +367,7 @@ const patternsdata = [
   },
   {
     name: "Node Agents",
-    filters: {
+    filter: {
       type: "Deployment",
       compatibility: ["Linkerd"],
       technology: "",
@@ -384,7 +384,7 @@ const patternsdata = [
   },
   {
     name: "Proxyless Service Mesh",
-    filters: {
+    filter: {
       type: "Deployment",
       compatibility: ["Linkerd"],
       technology: "",
@@ -401,7 +401,7 @@ const patternsdata = [
   },
   {
     name: "Passive and Active Health Check",
-    filters: {
+    filter: {
       type: "Deployment",
       compatibility: ["Linkerd"],
       technology: "",
@@ -418,7 +418,7 @@ const patternsdata = [
   },
   {
     name: "Tranparently Proxying TLS",
-    filters: {
+    filter: {
       type: "Traffic Management",
       compatibility: ["Linkerd"],
       technology: "",
@@ -435,7 +435,7 @@ const patternsdata = [
   },
   {
     name: "Bulkheading with Resiliency",
-    filters: {
+    filter: {
       type: "Resiliency",
       compatibility: ["Linkerd"],
       technology: "",
@@ -452,7 +452,7 @@ const patternsdata = [
   },
   {
     name: "Protocol Aware Meshing",
-    filters: {
+    filter: {
       type: "Traffic Management",
       compatibility: ["Linkerd"],
       technology: "",
@@ -469,7 +469,7 @@ const patternsdata = [
   },
   {
     name: "Visualizing services",
-    filters: {
+    filter: {
       type: "Observability",
       compatibility: ["Linkerd"],
       technology: "",
@@ -486,7 +486,7 @@ const patternsdata = [
   },
   {
     name: "Using Envoy metrics",
-    filters: {
+    filter: {
       type: "",
       compatibility: ["Linkerd"],
       technology: "",
@@ -503,7 +503,7 @@ const patternsdata = [
   },
   {
     name: "Using Request Logs",
-    filters: {
+    filter: {
       type: "Observability",
       compatibility: ["Linkerd"],
       technology: "",
@@ -520,7 +520,7 @@ const patternsdata = [
   },
   {
     name: "Using Traces",
-    filters: {
+    filter: {
       type: "Observability",
       compatibility: ["Linkerd"],
       technology: "",
@@ -537,7 +537,7 @@ const patternsdata = [
   },
   {
     name: "Managing configuration change",
-    filters: {
+    filter: {
       type: "Troubleshooting",
       compatibility: ["Linkerd"],
       technology: "",
