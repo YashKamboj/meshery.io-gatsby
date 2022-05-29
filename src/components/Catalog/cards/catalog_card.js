@@ -2,17 +2,22 @@ import React, {useState} from "react";
 import patternslogo from "../../../assets/images/service-mesh-pattern.svg";
 import ReactModal from "react-modal";
 import CardWrapper from "./card.styles";
-
+// import {CloseIcon} from '@mui/icons-material/Close';
+ import {AiOutlineClose} from '@react-icons/all-files/ai/AiOutlineClose'
 const Catalogcard = ({ pattern }) => {
 
   const customStyles = {
     content: {
-      top: '50%',
+      top: '25rem',
       left: '50%',
       right: 'auto',
       bottom: 'auto',
-      // marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
+      overflow: "auto",
+      overflowX: "hidden",
+      height: "35rem",
+      borderRadius: "1rem", 
+      width: "60%",
     },
   };
 
@@ -47,7 +52,7 @@ const Catalogcard = ({ pattern }) => {
       >
       <div id="open-modal" className="modal-window">
         <div>
-          <button className="modal-close close" style={{right:"0", position: "fixed"}} onClick={closeModal}>close</button>
+          <AiOutlineClose  style={{right:"1rem",top: "1rem", position: "fixed", cursor: "pointer"}} onClick={closeModal} />
           <div className="chip ">
             <h6 className="pattern-type"> {pattern.filters.type}</h6>
           </div>
@@ -63,8 +68,8 @@ const Catalogcard = ({ pattern }) => {
           <h4>What this pattern does:</h4><p>{pattern.patternInfo}</p>
           <h4>Caveats and Consideration: </h4><p>{pattern.patternCaveats}</p><p />
           <h4>Compatibilty:</h4>
-          {/* {'{'}% include partials/compatibility.html%{'}'}
-          {'{'}% include copy-and-download.html %{'}'} */}
+          <img style={{width:"2rem"}} src={pattern.compatibility} />
+          {/* {{'{'}% include copy-and-download.html %{'}'}  */}
           </div>
         </div></div></div>
               </ReactModal>

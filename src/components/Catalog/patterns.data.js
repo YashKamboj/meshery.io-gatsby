@@ -2,6 +2,16 @@ import pattern1 from "../../assets/images/patterns/service-mesh.svg";
 import pattern2 from "../../assets/images/patterns/circuit-breaker.svg";
 import pattern3 from "../../assets/images/patterns/rate-limit.svg";
 
+ import Istio from "../../assets/images/adapters/istio.svg";
+ import Linkerd from "../../assets/images/adapters/linkerd.svg";
+ import AppMesh from "../../assets/images/adapters/aws-app-mesh.svg";
+ import OSM from "../../assets/images/adapters/osm.svg";
+ import Nginx from "../../assets/images/adapters/nginx-sm.svg";
+ import Kuma from "../../assets/images/adapters/Kuma.svg";
+ import Consul from "../../assets/images/adapters/consul.svg";
+ import NSM from "../../assets/images/adapters/nsm.svg";
+ import Traefik from "../../assets/images/adapters/traefik-mesh.svg";
+
 const patternsdata = [
   {
     name: "Basic Istio Install",
@@ -10,6 +20,7 @@ const patternsdata = [
       compatibility: ["Istio"],
       technology: "WebAssembly",
     },
+    compatibility: Istio ,
     patternId: "MESHERY001",
     image: pattern1,
     patternInfo:
@@ -35,6 +46,17 @@ const patternsdata = [
       ],
       technology: "JWT",
     },
+    compatibility: 
+    {  Istio,
+      Linkerd,
+      AppMesh,
+      OSM,
+      Nginx,
+      Kuma,
+      Consul,
+      NSM,
+      Traefik,
+        }    ,
     patternId: "MESHERY002",
     image: pattern2,
     patternInfo:
@@ -51,6 +73,7 @@ const patternsdata = [
       compatibility: ["Istio", "Kuma"],
       technology: "",
     },
+    compatibility: {Istio, Kuma},
     patternId: "MESHERY003",
     image: pattern3,
     patternInfo:

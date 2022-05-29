@@ -56,10 +56,6 @@ const CatalogPage = () => {
           </Row>
         </div>
         </div>
-        {/* <div style={{position: "relative",		display: "flex",
-              margin: "auto", top: "5rem",}}>   */}
-
-              {/* </div> */}
       </div>
     </Layout>
   );

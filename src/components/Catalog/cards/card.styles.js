@@ -6,6 +6,11 @@ const CardWrapper = styled.section`
 
   width: auto;
   flex-direction: row-reverse;
+  
+  .modal-window{
+    height: 1rem;
+    overflow: scroll;
+  }
 
   .chip {
     display: inline-flex;
