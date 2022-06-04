@@ -11,12 +11,14 @@ const ResourceGrid = (props) => {
   // const currentPosts = props.data.slice(indexOfFirstPost, indexOfLastPost);
   
   // Change page
-
+  
+  console.log(props.allResources, "hi")
   return (
     <ResourcePageWrapper>
       <div className="resource-grid-wrapper">
         <Row>
-          {props.allResources.map(({ data, }) => (
+          {props.allResources.map(( data ) => (
+            
             <Col  xs={12} sm={6} xl={4}>
               <Card data={data} />
             </Col>

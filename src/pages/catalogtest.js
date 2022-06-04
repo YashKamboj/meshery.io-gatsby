@@ -20,9 +20,10 @@ const MembersPage = () => {
 
   return (
       <Layout>
+        <div style={{display: "flex"}}>
               <ResourcesNavigation handleChange={handleChange} resources={filter} />
-              <ResourcesList  />
-              {/* <h1>Catalog</h1> */}
+              <ResourcesList  resources={filter} />
+              </div>
       </Layout>
   );
 };
