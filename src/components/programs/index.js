@@ -3,7 +3,7 @@ import ProgramsWrapper from "./programs.style";
 
 import Gsoc from "../../assets/images/programs/gsoc-logo.svg";
 import CNCF from "../../assets/images/programs/cncf-logo.svg";
-import Gsod from "../../assets/images/programs/gsod-logo.svg";
+import Gsod from "../../assets/images/programs/Gsod-logo.svg";
 import LFX from "../../assets/images/programs/lfx-logo.svg";
 
 const Programs = () => {

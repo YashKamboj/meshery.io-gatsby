@@ -22,6 +22,8 @@ const ResourcesList = (props) => {
   let tech =[];
   let mesh =[];
 
+  console.log(props)
+
   const optionData = React.useMemo(() => options);
   let typeOptions = optionData.filter((data) => data.category === "Type");
   let productOptions = optionData.filter((data) => data.category === "Product");
@@ -58,7 +60,7 @@ const ResourcesList = (props) => {
   let totalMesh = mesh.length;
 
   if(props.resource.length>0) {
-    props.forEach((resources) => {
+    props.resource.forEach((resources) => {
 
       all.push(resources);
 
@@ -91,11 +93,12 @@ const ResourcesList = (props) => {
       if(totalTech === 0) techData = all;
       if(totalMesh === 0) meshData = all;
 
-      result = [typeData, productData, techData, meshData],
+      result = [typeData, productData, techData, meshData]
       data = result.reduce((a, b) => a.filter(c => b.includes(c)));
     });
   } else{
-    props.data.forEach((resources) => {
+   
+    props.allResources.allMdx.nodes.forEach((resources) => {
       data.push(resources);
     });
   }
