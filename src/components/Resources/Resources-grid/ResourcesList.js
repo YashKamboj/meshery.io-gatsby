@@ -65,6 +65,8 @@ const ResourcesList = (props) => {
       products.map((product) => {
         if(resources.filters.compatibility.includes(product) ) {
           productData.push(resources);
+        console.log(resources, "xyz")
+
         }
       });
 
@@ -84,7 +86,7 @@ const ResourcesList = (props) => {
       console.log(data, "123")
     });
   } else{ 
-    props.data.forEach((resources) => {
+    props.allResources.forEach((resources) => {
       data.push(resources);
     });
   }
