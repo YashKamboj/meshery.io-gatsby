@@ -9,15 +9,15 @@ const Card = ({ data }) => {
     <CardWrapper >
       <div className="post-block">
         <div className="post-thumb-block">
-          <Image
+          {/* <Image
             {...data.image}
             imgStyle={{ objectFit: "contain" }}
             alt={data.name}
-          />
+          /> */}
         </div>
         <div className="post-content-block">
           <h2 className="post-title">
-            {data.name}
+            {data.allReources.name}
           </h2>
         </div>
       </div>

@@ -16,7 +16,7 @@ const ResourceGrid = (props) => {
     <ResourcePageWrapper>
       <div className="resource-grid-wrapper">
         <Row>
-          {props.map(({ data, }) => (
+          {props.allResources.map(({ data, }) => (
             <Col  xs={12} sm={6} xl={4}>
               <Card data={data} />
             </Col>

@@ -23,15 +23,13 @@ const ResourcesList = (props) => {
   let mesh =[];
 
   console.log(props)
-
   const optionData = React.useMemo(() => options);
-  let typeOptions = optionData.filter((data) => data.category === "Type");
-  let productOptions = optionData.filter((data) => data.category === "Product");
+  let typeOptions = optionData.filter((data) => data.category === "Categories");
+  let productOptions = optionData.filter((data) => data.category === "Compatibilty");
   let techOptions = optionData.filter((data) => data.category === "Technology");
-  let meshOptions = optionData.filter((data) => data.category === "Service Mesh");
 
   //mapping all filters to separate individual category filters
-  props.resource.map((type) => {
+  props.allResources.map((type) => {
     typeOptions[0].subdata.map((x) => {
       if(type === x.value){
         types.push(type);
@@ -47,11 +45,6 @@ const ResourcesList = (props) => {
         tech.push(type);
       }
     });
-    meshOptions[0].subdata.map((x) => {
-      if(type === x.value){
-        mesh.push(type);
-      }
-    });
   });
 
   let totalTypes = types.length;
@@ -59,8 +52,8 @@ const ResourcesList = (props) => {
   let totalTech = tech.length;
   let totalMesh = mesh.length;
 
-  if(props.resource.length>0) {
-    props.resource.forEach((resources) => {
+  if(props.allResources.length>0) {
+    props.allResources.forEach((resources) => {
 
       all.push(resources);
 
@@ -96,9 +89,8 @@ const ResourcesList = (props) => {
       result = [typeData, productData, techData, meshData]
       data = result.reduce((a, b) => a.filter(c => b.includes(c)));
     });
-  } else{
-   
-    props.allResources.allMdx.nodes.forEach((resources) => {
+  } else{ 
+    props.data.forEach((resources) => {
       data.push(resources);
     });
   }
