@@ -38,7 +38,7 @@ const Catalogcard = ({ pattern }) => {
         <div>
           <h6 className="pattern-id">
             <img className="smp" src={patternslogo} loading="lazy" />
-            {pattern.patternId}
+            {pattern.Id}
           </h6>
         </div>
       </div>
@@ -56,8 +56,8 @@ const Catalogcard = ({ pattern }) => {
           <div className="chip ">
             <h6 className="pattern-type"> {pattern.filters.type}</h6>
           </div>
-          <div style={{display: "flex", gap:"1rem"}}>
-          <p /><div className="modal-image-container"><div className="modal-image"><img style={{width: "50rem"}} src={pattern.image}/> <h4 className="related-patterns">Related Patterns</h4>
+          <div style={{display: "flex", gap:"2rem"}}>
+          <p /><div className="modal-image-container"><div className="modal-image"><img style={{width: "40rem"}} src={pattern.image}/> <h4 className="related-patterns">Related Patterns</h4>
               {/* MINICARD-START */}
               {/* {'{'}% include related-patterns.html %{'}'} */}
             </div>

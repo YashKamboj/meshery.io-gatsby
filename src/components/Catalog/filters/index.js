@@ -1,6 +1,7 @@
 import React from 'react'
 import filtersoption from "./filter.options"
 import FilterWrapper from "./filters.style"
+// import patternsdata
 
 const Filters = (props) => {
     // const data = React.useMemo(() => Filtersoption);

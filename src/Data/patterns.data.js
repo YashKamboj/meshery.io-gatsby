@@ -20,7 +20,6 @@ const patternsdata = [
       compatibility: ["Istio"],
       technology: "WebAssembly",
     },
-    type: "Deployment",
     compatibility: Istio ,
     Id: "MESHERY001",
     image: pattern1,

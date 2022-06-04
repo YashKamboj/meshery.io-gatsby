@@ -10,18 +10,21 @@ import Filters from "../components/Catalog/filters";
 import { Col, Row } from "../reusecore/Layout";
 import Modal from "react-modal";
 
-const CatalogPage = () => {
+const CatalogPage = (value) => {
   const [filter, setFilter] = useState([]);
+  const [data, setData] = useState(patternsdata);
   
-
+  // const types = patternsdata[3].filters
 
   const handleChange = () => {
-    var checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
-    var filters = [];
-    for (var i = 0; i < checkboxes.length; i++) {
-      filters.push(checkboxes[i].value);
-    }
-    setFilter(filters);
+    // var checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
+    // var filters = [];
+    // for (var i = 0; i < checkboxes.length; i++) {
+    //   filters.push(checkboxes[i].value);
+    // }
+    // setFilter(filters);
+    const result = data.filter((x) => x.type === "Deployment"  )
+    setData(result);
   };
 
   return (
@@ -40,13 +43,13 @@ const CatalogPage = () => {
               // gap: "2rem",
             }}
           >
-            {patternsdata.map((pattern) => {
+            {data.map((pattern) => {
               if (pattern.Status !== "ComingSoon") {
                 return <Catalogcard pattern={pattern} />;
               }
             })}
-            {wasmdata.map((filter) => {
-              return <WasmCard filter={filter} />;
+            {wasmdata.map((pattern) => {
+              return <Catalogcard pattern={pattern} />;
             })}
             {patternsdata.map((pattern) => {
               if (pattern.Status === "ComingSoon") {

@@ -1,18 +1,26 @@
-import pattern1 from "../../assets/images/patterns/service-mesh.svg";
-import pattern2 from "../../assets/images/patterns/circuit-breaker.svg";
-import pattern3 from "../../assets/images/patterns/rate-limit.svg";
+import React from "react";
+import pattern1 from "../../../assets/images/patterns/service-mesh.svg";
+import pattern2 from "../../../assets/images/patterns/circuit-breaker.svg";
+import pattern3 from "../../../assets/images/patterns/rate-limit.svg";
 
- import Istio from "../../assets/images/adapters/istio.svg";
- import Linkerd from "../../assets/images/adapters/linkerd.svg";
- import AppMesh from "../../assets/images/adapters/aws-app-mesh.svg";
- import OSM from "../../assets/images/adapters/osm.svg";
- import Nginx from "../../assets/images/adapters/nginx-sm.svg";
- import Kuma from "../../assets/images/adapters/Kuma.svg";
- import Consul from "../../assets/images/adapters/consul.svg";
- import NSM from "../../assets/images/adapters/nsm.svg";
- import Traefik from "../../assets/images/adapters/traefik-mesh.svg";
+ import Istio from "../../../assets/images/adapters/istio.svg";
+ import Linkerd from "../../../assets/images/adapters/linkerd.svg";
+ import AppMesh from "../../../assets/images/adapters/aws-app-mesh.svg";
+ import OSM from "../../../assets/images/adapters/osm.svg";
+ import Nginx from "../../../assets/images/adapters/nginx-sm.svg";
+ import Kuma from "../../../assets/images/adapters/Kuma.svg";
+ import Consul from "../../../assets/images/adapters/consul.svg";
+ import NSM from "../../../assets/images/adapters/nsm.svg";
+ import Traefik from "../../../assets/images/adapters/traefik-mesh.svg";
 
-const patternsdata = [
+// Libraries
+// import { useStaticQuery, graphql } from "gatsby";
+
+const DataWrapper = (WrappedComponent) => {
+  return (props) => {
+
+
+const data = [
   {
     name: "Basic Istio Install",
     filters: {
@@ -20,7 +28,6 @@ const patternsdata = [
       compatibility: ["Istio"],
       technology: "WebAssembly",
     },
-    type: "Deployment",
     compatibility: Istio ,
     Id: "MESHERY001",
     image: pattern1,
@@ -576,6 +583,11 @@ const patternsdata = [
     URL: "",
     downloadLink: "",
   },
-];
+]
 
-export default patternsdata;
+
+    return <WrappedComponent allResources={data} {...props} />;
+  };
+};
+
+export default DataWrapper;
