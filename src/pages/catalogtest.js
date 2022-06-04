@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // Components
 import Layout from "../Layout/layout";
 import ResourcesList from "../components/Resources/Resources-grid/ResourcesList";
-// import ResourcesNavigation from "../components/Resources/Resources-grid/filters";
+import ResourcesNavigation from "../components/Resources/Resources-grid/filters";
 
 
 const MembersPage = () => {
@@ -20,8 +20,8 @@ const MembersPage = () => {
 
   return (
       <Layout>
-              {/* <ResourcesNavigation handleChange={handleChange} resources={filter} /> */}
-              <ResourcesList resource={filter} />
+              <ResourcesNavigation handleChange={handleChange} resources={filter} />
+              <ResourcesList  />
               {/* <h1>Catalog</h1> */}
       </Layout>
   );
