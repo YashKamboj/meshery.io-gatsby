@@ -12,12 +12,12 @@ const ResourceGrid = (props) => {
   
   // Change page
   
-  console.log(props.allResources, "hi")
+  console.log(props.data, "hi")
   return (
     <ResourcePageWrapper>
       <div className="resource-grid-wrapper">
         <Row>
-          {props.allResources.map(( data ) => (
+          {props.data.map(( data ) => (
             
             <Col  xs={12} sm={6} xl={4}>
               <Card data={data} />

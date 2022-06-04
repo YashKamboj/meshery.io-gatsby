@@ -49,14 +49,13 @@ const ResourcesList = (props) => {
   let totalTypes = types.length;
   let totalProducts = products.length;
   let totalTech = tech.length;
-  let totalMesh = mesh.length;
 
   if(props.allResources.length>0) {
     props.allResources.forEach((resources) => {
       all.push(resources);
 
       types.map((type) => {
-        console.log(resources.filters.type, "catalog")
+        console.log(types, "catalog")
 
         if(resources.filters.type === type) {
           typeData.push(resources);
@@ -78,17 +77,18 @@ const ResourcesList = (props) => {
       if(totalTypes === 0) typeData = all;
       if(totalProducts === 0) productData = all;
       if(totalTech === 0) techData = all;
-      if(totalMesh === 0) meshData = all;
 
-      result = [typeData, productData, techData, meshData]
+      result = [typeData, productData, techData]
+      
       data = result.reduce((a, b) => a.filter(c => b.includes(c)));
+      console.log(data, "123")
     });
   } else{ 
     props.data.forEach((resources) => {
       data.push(resources);
     });
   }
-
+    
     return <ResourcesGrid data={[...new Set(data)]} {...props} />;
 
 };
