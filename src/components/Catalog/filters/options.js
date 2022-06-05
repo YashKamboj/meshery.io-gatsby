@@ -2,7 +2,6 @@ export const options =  [
   {
     category: "Categories",
     subdata: [
-      { id: 0, value: "All", label: "All" },
       { id: 1, value: "Deployment", label: "Deployment" },
       { id: 2, value: "Traffic Management", label: "Traffic Management" },
       { id: 3, value: "Security", label: "Security" },
