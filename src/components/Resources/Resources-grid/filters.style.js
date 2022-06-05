@@ -50,6 +50,8 @@ input[type="checkbox"] {
         }
 
         ul{
+          list-style-type: none;
+          margin-left: 0;
             display:flex;
             flex-direction:column;
             white-space: nowrap;

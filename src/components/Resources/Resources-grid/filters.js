@@ -16,17 +16,14 @@ const Navigation = (props) => {
   return (
     <ResourceNavigationWrapper>
       <div className="filter">
-        <p className="heading"><strong>Filters</strong></p>
-            
-
         <div className="list">
+        <p className="heading"><strong>Categories:</strong></p>
           <ul >
             {typeOptions[0].subdata.map((x) => (
               <li key={x.id}>
                 <label>
                   <input type="checkbox"  value={x.value} onChange={props.handleChange} />
-                  <span> {x.label}</span>
-        
+                  <span> {x.label}</span>     
                 </label> 
               </li>
             ))}
@@ -34,6 +31,7 @@ const Navigation = (props) => {
         </div>
 
         <div className="list">
+        <p className="heading"><strong>Compatibilty:</strong></p>
           <ul >
             {productOptions[0].subdata.map((x) => (
               <li key={x.id}>
@@ -48,6 +46,7 @@ const Navigation = (props) => {
         </div>
 
         <div className="list">
+        <p className="heading"><strong>Technology:</strong></p>
           <ul >
             {techOptions[0].subdata.map((x) => (
               <li key={x.id}>

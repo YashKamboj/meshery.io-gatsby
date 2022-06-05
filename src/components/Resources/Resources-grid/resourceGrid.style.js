@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const ResourcePageWrapper = styled.div`
 
     .resource-grid-wrapper{
-        margin: 4rem 0 1.5rem 1.5rem;
+        margin: 2rem 0 1.5rem 1.5rem;
     }
     .post-content-block{
         height: 7rem;
