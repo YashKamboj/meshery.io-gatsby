@@ -23,12 +23,10 @@ const DataWrapper = (WrappedComponent) => {
 const data = [
   {
     name: "Basic Istio Install",
-    filters: {
-      type: "Deployment",
-      compatibility: ["Istio"],
+    compatibility: ["Istio"],
       technology: "WebAssembly",
-    },
-    compatibility: Istio ,
+    type: "Deployment",
+    compatibilityIcon: Istio ,
     Id: "MESHERY001",
     image: pattern1,
     patternInfo:
@@ -39,22 +37,20 @@ const data = [
   },
   {
     name: "Circuit Breaker",
-    filters: {
-      type: "Traffic Management",
-      compatibility: [
-        "Istio",
-        "Linkerd",
-        "App Mesh",
-        "OSM",
-        "Nginx",
-        "Kuma",
-        "Consul",
-        "NSM",
-        "Traefik",
-      ],
-      technology: "JWT",
-    },
-    compatibility: 
+    type: "Traffic Management",
+    compatibility: [
+      "Istio",
+      "Linkerd",
+      "App Mesh",
+      "OSM",
+      "Nginx",
+      "Kuma",
+      "Consul",
+      "NSM",
+      "Traefik",
+    ],
+    technology: "JWT",
+    compatibilityIcon: 
     {  Istio,
       Linkerd,
       AppMesh,
@@ -76,12 +72,10 @@ const data = [
   },
   {
     name: "Local Rate Limiter",
-    filters: {
-      type: "Traffic Management",
-      compatibility: ["Istio", "Kuma"],
-      technology: "",
-    },
-    compatibility: {Istio, Kuma},
+    type: "Traffic Management",
+    compatibility: ["Istio", "Kuma"],
+    technology: "",
+    compatibilityIcon: {Istio, Kuma},
     Id: "MESHERY003",
     image: pattern3,
     patternInfo:
@@ -93,11 +87,9 @@ const data = [
   },
   {
     name: "Duration-based Canary",
-    filters: {
-      type: "Traffic Management",
-      compatibility: ["Linkerd"],
-      technology: "",
-    },
+    type: "Traffic Management",
+    compatibility: ["Linkerd"],
+    technology: "",
     Id: "MESHERY004",
     image: pattern1,
     patternInfo:
@@ -109,11 +101,9 @@ const data = [
   },
   {
     name: "Debugging the Data Plane",
-    filters: {
-      type: "Troubleshooting",
-      compatibility: ["Linkerd"],
-      technology: "",
-    },
+    type: "Troubleshooting",
+    compatibility: ["Linkerd"],
+    technology: "",
     Id: "MESHERY005",
     image: pattern1,
     Status: "ComingSoon",
@@ -126,11 +116,9 @@ const data = [
   },
   {
     name: "Service Mesh Adapter",
-    filters: {
-      type: "Traffic Management",
-      compatibility: ["Istio"],
-      technology: "",
-    },
+    type: "Traffic Management",
+    compatibility: ["Istio"],
+    technology: "",
     Id: "MESHERY006",
     image: pattern1,
     Status: "ComingSoon",
@@ -143,11 +131,9 @@ const data = [
   },
   {
     name: "Timeouts",
-    filters: {
-      type: "Traffic Management",
-      compatibility: ["Istio"],
-      technology: "",
-    },
+    type: "Traffic Management",
+    compatibility: ["Istio"],
+    technology: "",
     Id: "MESHERY007",
     image: pattern1,
     Status: "ComingSoon",
@@ -160,11 +146,9 @@ const data = [
   },
   {
     name: "Egress Gateways",
-    filters: {
-      type: "Security",
-      compatibility: ["Linkerd"],
-      technology: "",
-    },
+    type: "Security",
+    compatibility: ["Linkerd"],
+    technology: "",
     Id: "MESHERY008",
     image: pattern1,
     Status: "ComingSoon",
@@ -177,11 +161,9 @@ const data = [
   },
   {
     name: "Segmenting the Monolith",
-    filter: {
-      type: "Workloads",
-      compatibility: ["Linkerd"],
-      technology: "",
-    },
+    type: "Workloads",
+    compatibility: ["Linkerd"],
+    technology: "",
     Id: "MESHERY009",
     image: pattern1,
     Status: "ComingSoon",
@@ -194,11 +176,9 @@ const data = [
   },
   {
     name: "Brownfield Environments",
-    filter: {
-      type: "Worloads",
-      compatibility: ["Linkerd"],
-      technology: "",
-    },
+    type: "Worloads",
+    compatibility: ["Linkerd"],
+    technology: "",
     Id: "MESHERY010",
     image: pattern1,
     Status: "ComingSoon",
@@ -210,12 +190,10 @@ const data = [
     downloadLink: "",
   },
   {
-    name: "Service Mesh Adapter",
-    filter: {
-      type: "Traffic Management",
-      compatibility: ["Linkerd"],
-      technology: "",
-    },
+    name: "Service Mesh Adapter",  
+    compatibility: ["Linkerd"],
+    technology: "",
+    type: "Traffic Management",
     Id: "MESHERY011",
     image: pattern1,
     Status: "ComingSoon",
@@ -228,11 +206,11 @@ const data = [
   },
   {
     name: "Data Plane extensibility",
-    filter: {
-      type: "Observability",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Observability",
     Id: "MESHERY012",
     image: pattern1,
     Status: "ComingSoon",
@@ -245,11 +223,11 @@ const data = [
   },
   {
     name: "Debugging Control Plane",
-    filter: {
-      type: "Troubleshooting",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Troubleshooting",
     Id: "MESHERY013",
     image: pattern1,
     Status: "ComingSoon",
@@ -262,11 +240,11 @@ const data = [
   },
   {
     name: "Load balancing Algs",
-    filter: {
-      type: "Traffic Management",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Traffic Management",
     Id: "MESHERY014",
     image: pattern1,
     Status: "ComingSoon",
@@ -279,11 +257,11 @@ const data = [
   },
   {
     name: "Retries",
-    filter: {
-      type: "Traffic Management",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Traffic Management",
     Id: "MESHERY016",
     image: pattern1,
     Status: "ComingSoon",
@@ -296,11 +274,11 @@ const data = [
   },
   {
     name: "Ingress",
-    filter: {
-      type: "Traffic Management",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Traffic Management",
     Id: "MESHERY017",
     image: pattern1,
     Status: "ComingSoon",
@@ -313,11 +291,11 @@ const data = [
   },
   {
     name: "Foundational Traffic Routing",
-    filter: {
-      type: "Security",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Security",
     Id: "MESHERY018",
     image: pattern1,
     Status: "ComingSoon",
@@ -330,11 +308,11 @@ const data = [
   },
   {
     name: "Federation",
-    filter: {
-      type: "Scaling",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Scaling",
     Id: "MESHERY019",
     image: pattern1,
     Status: "ComingSoon",
@@ -347,11 +325,11 @@ const data = [
   },
   {
     name: "Multi-cluster failover",
-    filter: {
-      type: "Scaling",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Scaling",
     Id: "MESHERY020",
     image: pattern1,
     Status: "ComingSoon",
@@ -364,11 +342,11 @@ const data = [
   },
   {
     name: "Cloud bursting",
-    filter: {
-      type: "Scaling",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Scaling",
     Id: "MESHERY021",
     image: pattern1,
     Status: "ComingSoon",
@@ -381,11 +359,11 @@ const data = [
   },
   {
     name: "Sidecar Proxies",
-    filter: {
-      type: "Deployment",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Deployment",
     Id: "MESHERY021",
     image: pattern1,
     Status: "ComingSoon",
@@ -398,11 +376,11 @@ const data = [
   },
   {
     name: "Node Agents",
-    filter: {
-      type: "Deployment",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Deployment",
     Id: "MESHERY022",
     image: pattern1,
     Status: "ComingSoon",
@@ -415,11 +393,12 @@ const data = [
   },
   {
     name: "Proxyless Service Mesh",
-    filter: {
-      type: "Deployment",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    
+    type: "Deployment",
     Id: "MESHERY023",
     image: pattern1,
     Status: "ComingSoon",
@@ -432,11 +411,12 @@ const data = [
   },
   {
     name: "Passive and Active Health Check",
-    filter: {
-      type: "Deployment",
+    
+    
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    
+    type: "Deployment",
     Id: "MESHERY024",
     image: pattern1,
     Status: "ComingSoon",
@@ -449,11 +429,12 @@ const data = [
   },
   {
     name: "Tranparently Proxying TLS",
-    filter: {
-      type: "Traffic Management",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    
+    type: "Traffic Management",
     Id: "MESHERY025",
     image: pattern1,
     Status: "ComingSoon",
@@ -466,11 +447,12 @@ const data = [
   },
   {
     name: "Bulkheading with Resiliency",
-    filter: {
-      type: "Resiliency",
+
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    
+    type: "Resiliency",
     Id: "MESHERY026",
     image: pattern1,
     Status: "ComingSoon",
@@ -483,11 +465,12 @@ const data = [
   },
   {
     name: "Protocol Aware Meshing",
-    filter: {
-      type: "Traffic Management",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    
+    type: "Traffic Management",
     Id: "MESHERY027",
     image: pattern1,
     Status: "ComingSoon",
@@ -500,11 +483,12 @@ const data = [
   },
   {
     name: "Visualizing services",
-    filter: {
-      type: "Observability",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    
+    type: "Observability",
     Id: "MESHERY028",
     image: pattern1,
     Status: "ComingSoon",
@@ -517,11 +501,11 @@ const data = [
   },
   {
     name: "Using Envoy metrics",
-    filter: {
-      type: "",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "",
     Id: "MESHERY029",
     image: pattern1,
     Status: "ComingSoon",
@@ -534,11 +518,11 @@ const data = [
   },
   {
     name: "Using Request Logs",
-    filter: {
-      type: "Observability",
+    
+     
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Observability",
     Id: "MESHERY030",
     image: pattern1,
     Status: "ComingSoon",
@@ -551,11 +535,11 @@ const data = [
   },
   {
     name: "Using Traces",
-    filter: {
-      type: "Observability",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+    type: "Observability",
     Id: "MESHERY031",
     image: pattern1,
     Status: "ComingSoon",
@@ -568,11 +552,12 @@ const data = [
   },
   {
     name: "Managing configuration change",
-    filter: {
-      type: "Troubleshooting",
+    
+      
       compatibility: ["Linkerd"],
       technology: "",
-    },
+
+    type: "Troubleshooting",
     Id: "MESHERY032",
     image: pattern1,
     Status: "ComingSoon",

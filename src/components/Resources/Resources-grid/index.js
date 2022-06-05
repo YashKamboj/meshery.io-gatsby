@@ -12,7 +12,7 @@ const ResourceGrid = (props) => {
   
   // Change page
   
-  console.log(props.data, "hi")
+  console.log(props, "hi")
   return (
     <ResourcePageWrapper>
       <div className="resource-grid-wrapper">

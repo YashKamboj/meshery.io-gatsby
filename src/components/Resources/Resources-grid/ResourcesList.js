@@ -12,15 +12,13 @@ const ResourcesList = (props) => {
   //arrays to store filtered list of resources based on individual filters
   let typeData = [];  
   let productData = [];  
-  let techData = [];  
-  let meshData = [];  
+  let techData = [];   
   let result = [];
   
   //arrays storing the options selected to filter
   let types =[];
   let products =[];
   let tech =[];
-  let mesh =[];
 
   const optionData = React.useMemo(() => options);
   let typeOptions = optionData.filter((data) => data.category === "Categories");
@@ -53,26 +51,22 @@ const ResourcesList = (props) => {
   if(props.allResources.length>0) {
     props.allResources.forEach((resources) => {
       all.push(resources);
-
       types.map((type) => {
-        console.log(types, "catalog")
-
-        if(resources.filters.type === type) {
+        if(resources.type === type) {
           typeData.push(resources);
         }
       });
 
       products.map((product) => {
-        if(resources.filters.compatibility.includes(product) ) {
+        if(resources.compatibility === product) {
           productData.push(resources);
-        console.log(resources, "xyz")
-
         }
       });
 
       tech.map((tech) => {
-        if(resources.filters.technology === tech) {
+        if(resources.technology === tech) {
           techData.push(resources);
+          console.log(resources)
         }
       });
 
@@ -83,7 +77,6 @@ const ResourcesList = (props) => {
       result = [typeData, productData, techData]
       
       data = result.reduce((a, b) => a.filter(c => b.includes(c)));
-      console.log(data, "123")
     });
   } else{ 
     props.allResources.forEach((resources) => {
