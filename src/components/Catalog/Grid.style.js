@@ -1,5 +1,5 @@
 import styled from "styled-components";
-export const ResourcePageWrapper = styled.div`
+export const GridWrapper = styled.div`
 
     .resource-grid-wrapper{
         margin: 2rem 0 1.5rem 1.5rem;

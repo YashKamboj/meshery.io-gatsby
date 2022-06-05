@@ -1,25 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { options } from "./options";
 
 
-import ResourceNavigationWrapper from "./filters.style";
+import FiltersWrapper from "./filters.style";
 
-const Navigation = (props) => {
+const Filters = (props) => {
 
   const data = React.useMemo(() => options);
-  let typeOptions = data.filter((data) => data.category === "Categories");
-  let productOptions = data.filter((data) => data.category === "Compatibilty");
+  let categoriesOptions = data.filter((data) => data.category === "Categories");
+  let compatibiltyOptions = data.filter((data) => data.category === "Compatibilty");
   let techOptions = data.filter((data) => data.category === "Technology");
   let i=0;
 
 
   return (
-    <ResourceNavigationWrapper>
+    <FiltersWrapper>
       <div className="filter">
         <div className="list">
         <p className="heading"><strong>Categories:</strong></p>
           <ul >
-            {typeOptions[0].subdata.map((x) => (
+            {categoriesOptions[0].subdata.map((x) => (
               <li key={x.id}>
                 <label>
                   <input type="checkbox"  value={x.value} onChange={props.handleChange} />
@@ -33,7 +33,7 @@ const Navigation = (props) => {
         <div className="list">
         <p className="heading"><strong>Compatibilty:</strong></p>
           <ul >
-            {productOptions[0].subdata.map((x) => (
+            {compatibiltyOptions[0].subdata.map((x) => (
               <li key={x.id}>
                 <label>
                   <input type="checkbox"  value={x.value} onChange={props.handleChange} />
@@ -63,8 +63,8 @@ const Navigation = (props) => {
 
       </div>
       
-    </ResourceNavigationWrapper>
+    </FiltersWrapper>
   );
 };
 
-export default Navigation;
+export default Filters;

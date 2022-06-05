@@ -1,14 +1,14 @@
 import React from "react";
 import Card from "./Card";
 import  CommingSoonCard from "./Card/commingSoon_Card"
-import { Row, Col } from "../../../reusecore/Layout";
+import { Row, Col } from "../../reusecore/Layout";
 
-import { ResourcePageWrapper } from "./resourceGrid.style";
+import { GridWrapper } from "./Grid.style";
 
-const ResourceGrid = (props) => {
+const CatalogGrid = (props) => {
 
   return (
-    <ResourcePageWrapper>
+    <GridWrapper>
       <div className="resource-grid-wrapper">
         <Row>
           {props.data.map(( data ) => {
@@ -30,8 +30,8 @@ const ResourceGrid = (props) => {
             })}
         </Row> 
       </div>
-     </ResourcePageWrapper>
+     </GridWrapper>
   );
 };
 
-export default ResourceGrid;
+export default CatalogGrid;
