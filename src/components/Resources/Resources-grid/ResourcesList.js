@@ -48,7 +48,7 @@ const ResourcesList = (props) => {
   let totalProducts = products.length;
   let totalTech = tech.length;
 
-  if(props.allResources.length>0) {
+  if(props.resources.length>0) {
     props.allResources.forEach((resources) => {
       all.push(resources);
       types.map((type) => {

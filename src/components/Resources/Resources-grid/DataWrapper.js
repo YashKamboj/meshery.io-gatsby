@@ -669,7 +669,6 @@ const data = [
   },
 ]
 
-
     return <WrappedComponent allResources={data} {...props} />;
   };
 };
