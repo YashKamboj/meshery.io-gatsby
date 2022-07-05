@@ -3,7 +3,7 @@ import ProgramsWrapper from "./programs.style";
 
 import Gsoc from "../../assets/images/programs/gsoc-logo.svg";
 import CNCF from "../../assets/images/programs/cncf-logo.svg";
-import Gsod from "../../assets/images/programs/Gsod-logo.svg";
+import Gsod from "../../assets/images/programs/gsod-logo.svg";
 import LFX from "../../assets/images/programs/lfx-logo.svg";
 
 const Programs = () => {
@@ -23,9 +23,13 @@ const Programs = () => {
               <img
                 src={CNCF}
                 style={{
-                  width: "35%",
-                  paddingTop: "1.4rem",
-                  paddingBottom: ".4rem",
+                  width: "40%",
+                  // paddingTop: "1.4rem",
+                  // paddingBottom: ".4rem",
+                verticalAlign: "middle",
+                marginBottom: "0"
+       
+
                 }}
                 alt="CNCF"
                 className="minicard-img"
@@ -40,9 +44,11 @@ const Programs = () => {
               <img
                 src={Gsod}
                 style={{
-                  width: "35%",
-                  paddingTop: "1.4rem",
-                  paddingBottom: ".4rem",
+                  width: "40%",
+                  // paddingTop: "1.4rem",
+                  // paddingBottom: ".4rem",
+                 marginBottom: "0"
+
                 }}
                 alt="GSOD2020"
                 className="minicard-img"
@@ -57,9 +63,11 @@ const Programs = () => {
               <img
                 src={Gsoc}
                 style={{
-                  width: "35%",
-                  paddingTop: "1.4rem",
-                  paddingBottom: ".4rem",
+                  width: "40%",
+                  // paddingTop: "1.4rem",
+                  // paddingBottom: ".4rem",
+                  marginBottom: "0"
+
                 }}
                 alt="GSOC"
                 className="minicard-img"
@@ -76,9 +84,10 @@ const Programs = () => {
                 alt="LFX"
                 className="minicard-img"
                 style={{
-                  width: "23%",
-                  paddingTop: "1.7rem",
-                  paddingBottom: ".7rem",
+                  width: "30%",
+                  // paddingTop: "1.7rem",
+                  // paddingBottom: ".7rem",
+                  marginBottom: "0",
                 }}
               />
             </a>
