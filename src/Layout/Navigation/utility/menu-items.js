@@ -11,20 +11,11 @@ const MenuItems = [
     path: "https://play.meshery.io/",
   },
   {
-    name: "Blog",
-    path: "/blog",
-  },
-  {
     name: "Community",
     subItems: [
       {
         name: "Calender",
         path: "/calender",
-        sepLine: true,
-      },
-      {
-        name: "Programs",
-        path: "/programs",
         sepLine: true,
       },
       {
@@ -60,11 +51,6 @@ const MenuItems = [
       {
         name: "Service Mesh Catalog",
         path: "/catalog",
-        sepLine: true,
-      },
-      {
-        name: "Service Mesh Interface",
-        path: "/service-mesh-interface",
         sepLine: true,
       },
       {
