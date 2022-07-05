@@ -13,14 +13,17 @@ import MesheryPlatforms from "../components/Getting-Started";
 import cncfLogo from "../assets/images/cncf-horizontal-color.svg";
 import layer5logo from "../assets/images/layer5-no-trim.svg";
 import InfoBanner from "../components/infoBanner";
+import { DockerMuiThemeProvider } from '@docker/docker-mui-theme';
+import CssBaseline from '@mui/material/CssBaseline';
 
 const IndexPage = () => {
-  return (
-    <>
-      {/* <GlobalStyle /> */}
-      <Layout>
-        <Hero />
-        <InfoBanner />
+  
+
+  function QWE(){
+  return(
+    <Layout>
+      <Hero /> 
+      <InfoBanner />
         <AdapterTable />
         <Companies />
         <Overview />
@@ -79,6 +82,25 @@ const IndexPage = () => {
         </div>
         <Programs />
       </Layout>
+  )
+  
+  }
+
+  function ERT(){
+  let queryString = new URLSearchParams(window.location.search);
+  let xyz = queryString.get('origin');
+  
+  if (xyz=="mesheryextension"){
+    return(<DockerMuiThemeProvider>
+      <CssBaseline /> <QWE /> </DockerMuiThemeProvider> )
+  }else{
+    return ( <QWE />)
+  }
+}
+  return (
+    <>
+      {/* <GlobalStyle /> */}
+     <ERT />
     </>
   );
 };
